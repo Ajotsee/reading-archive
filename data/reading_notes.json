@@ -54,6 +54,25 @@
       "https://blog.naver.com/ajotsee/222899541522",
       "재미있는 책을 원하신다면 꼭 추천.",
       "끝."
+    ],
+    "startPage": 1,
+    "endPage": 5,
+    "images": [
+      {
+        "src": "assets/images/note-01-노인의-전쟁/p001-01.jpg",
+        "filename": "p001-01.jpg",
+        "page": 1
+      },
+      {
+        "src": "assets/images/note-01-노인의-전쟁/p004-02.jpg",
+        "filename": "p004-02.jpg",
+        "page": 4
+      },
+      {
+        "src": "assets/images/note-01-노인의-전쟁/p005-03.jpg",
+        "filename": "p005-03.jpg",
+        "page": 5
+      }
     ]
   },
   {
@@ -115,6 +134,15 @@
       "만 줄이겠습니다.",
       "근대 살인이 일어나기전에 근거가 있는지 없는지 어떻게 알아?",
       "끝."
+    ],
+    "startPage": 6,
+    "endPage": 8,
+    "images": [
+      {
+        "src": "assets/images/note-02-멘디블-가족/p006-01.jpg",
+        "filename": "p006-01.jpg",
+        "page": 6
+      }
     ]
   },
   {
@@ -227,6 +255,45 @@
       "가능하면 아이들도 꼭 읽었으면 하는 책입니다.",
       "감사합니다.",
       "끝."
+    ],
+    "startPage": 9,
+    "endPage": 17,
+    "images": [
+      {
+        "src": "assets/images/note-03-코스모스/p009-01.jpg",
+        "filename": "p009-01.jpg",
+        "page": 9
+      },
+      {
+        "src": "assets/images/note-03-코스모스/p011-02.png",
+        "filename": "p011-02.png",
+        "page": 11
+      },
+      {
+        "src": "assets/images/note-03-코스모스/p012-03.jpg",
+        "filename": "p012-03.jpg",
+        "page": 12
+      },
+      {
+        "src": "assets/images/note-03-코스모스/p013-04.jpg",
+        "filename": "p013-04.jpg",
+        "page": 13
+      },
+      {
+        "src": "assets/images/note-03-코스모스/p013-05.jpg",
+        "filename": "p013-05.jpg",
+        "page": 13
+      },
+      {
+        "src": "assets/images/note-03-코스모스/p016-06.png",
+        "filename": "p016-06.png",
+        "page": 16
+      },
+      {
+        "src": "assets/images/note-03-코스모스/p017-07.png",
+        "filename": "p017-07.png",
+        "page": 17
+      }
     ]
   },
   {
@@ -269,6 +336,20 @@
       "의 재능이 좋은 방면에서 잘 피어났으면 좋겠습니다.",
       "중국 관련 책도 쓰셨던데 한 번 빌릴 수 있으면 빌려서 재미로 읽어볼려구요.",
       "끝."
+    ],
+    "startPage": 18,
+    "endPage": 21,
+    "images": [
+      {
+        "src": "assets/images/note-04-이병한의-아메리카-탐문/p018-01.jpg",
+        "filename": "p018-01.jpg",
+        "page": 18
+      },
+      {
+        "src": "assets/images/note-04-이병한의-아메리카-탐문/p020-02.png",
+        "filename": "p020-02.png",
+        "page": 20
+      }
     ]
   },
   {
@@ -354,6 +435,15 @@
       "나는 대답하지 않았다.",
       "\"산다는 게 곧 말썽이오.\" 내가 대꾸하지 않자 조르바가 계속했다. \"죽으면 말썽이 없지. 산다는 것은...... 두목, 당신, 산다",
       "는 게 뭘 의미하는지 아시오? 허리띠를 풀고 말썽거리를 만드는 게 바로 삶이오!\""
+    ],
+    "startPage": 22,
+    "endPage": 26,
+    "images": [
+      {
+        "src": "assets/images/note-05-그리스인-조르바/p022-01.jpg",
+        "filename": "p022-01.jpg",
+        "page": 22
+      }
     ]
   },
   {
@@ -411,6 +501,40 @@
       "기회가 되시면 다들 꼭 읽어보셨으면 하는 재미있는 소설이었습니다.",
       "다들 즐거운 독서 되십쇼 ㅎㅎ ㅋㅋㅋ",
       "끝."
+    ],
+    "startPage": 27,
+    "endPage": 35,
+    "images": [
+      {
+        "src": "assets/images/note-06-달은-무자비한-밤의-여왕/p027-01.jpg",
+        "filename": "p027-01.jpg",
+        "page": 27
+      },
+      {
+        "src": "assets/images/note-06-달은-무자비한-밤의-여왕/p029-02.jpg",
+        "filename": "p029-02.jpg",
+        "page": 29
+      },
+      {
+        "src": "assets/images/note-06-달은-무자비한-밤의-여왕/p031-03.png",
+        "filename": "p031-03.png",
+        "page": 31
+      },
+      {
+        "src": "assets/images/note-06-달은-무자비한-밤의-여왕/p031-04.jpg",
+        "filename": "p031-04.jpg",
+        "page": 31
+      },
+      {
+        "src": "assets/images/note-06-달은-무자비한-밤의-여왕/p032-05.jpg",
+        "filename": "p032-05.jpg",
+        "page": 32
+      },
+      {
+        "src": "assets/images/note-06-달은-무자비한-밤의-여왕/p034-06.png",
+        "filename": "p034-06.png",
+        "page": 34
+      }
     ]
   },
   {
@@ -497,6 +621,30 @@
       "끝.",
       "같이 읽으면 좋은 책.",
       "https://blog.naver.com/ajotsee/223536746909"
+    ],
+    "startPage": 36,
+    "endPage": 41,
+    "images": [
+      {
+        "src": "assets/images/note-07-1984/p036-01.jpg",
+        "filename": "p036-01.jpg",
+        "page": 36
+      },
+      {
+        "src": "assets/images/note-07-1984/p037-02.jpg",
+        "filename": "p037-02.jpg",
+        "page": 37
+      },
+      {
+        "src": "assets/images/note-07-1984/p038-03.jpg",
+        "filename": "p038-03.jpg",
+        "page": 38
+      },
+      {
+        "src": "assets/images/note-07-1984/p041-04.jpg",
+        "filename": "p041-04.jpg",
+        "page": 41
+      }
     ]
   },
   {
@@ -535,6 +683,15 @@
       "저는 책을 읽고 나서 크게 동감하진 않았습니다만, 사람은 사람마다 자신의 철학이 있는 법이니 모든 판단은 직접 읽으시",
       "는 독자분들께서 스스로 읽어보시고 판단하시길 바랍니다.",
       "끝."
+    ],
+    "startPage": 42,
+    "endPage": 43,
+    "images": [
+      {
+        "src": "assets/images/note-08-인생은-순간이다/p042-01.png",
+        "filename": "p042-01.png",
+        "page": 42
+      }
     ]
   },
   {
@@ -576,6 +733,15 @@
       "그러나 한가지 분명한 사실은 세상이 아주 복잡해져서 온전한 자작 혼자서는 그것을 이룰 수 없다는 사실이었",
       "다.",
       "p119"
+    ],
+    "startPage": 44,
+    "endPage": 45,
+    "images": [
+      {
+        "src": "assets/images/note-09-반쪼가리-자작/p044-01.jpg",
+        "filename": "p044-01.jpg",
+        "page": 44
+      }
     ]
   },
   {
@@ -652,6 +818,30 @@
       "로그 내용을 끝까지 읽어신 분들께 다시한번 말씀드립니다 (이래서 제목만 보면 안되는 겁니다 ㅋㅋ)",
       "다들 즐거운 독서 되세요.",
       "끝."
+    ],
+    "startPage": 46,
+    "endPage": 51,
+    "images": [
+      {
+        "src": "assets/images/note-10-질문으로-시작하는-세계사-수업/p046-01.jpg",
+        "filename": "p046-01.jpg",
+        "page": 46
+      },
+      {
+        "src": "assets/images/note-10-질문으로-시작하는-세계사-수업/p047-02.jpg",
+        "filename": "p047-02.jpg",
+        "page": 47
+      },
+      {
+        "src": "assets/images/note-10-질문으로-시작하는-세계사-수업/p049-03.jpg",
+        "filename": "p049-03.jpg",
+        "page": 49
+      },
+      {
+        "src": "assets/images/note-10-질문으로-시작하는-세계사-수업/p050-04.jpg",
+        "filename": "p050-04.jpg",
+        "page": 50
+      }
     ]
   },
   {
@@ -770,6 +960,30 @@
       "종속된 사람들에 대한 권력 말이다.",
       "이것이 현재 화폐 시스템이 돌아가는 방식이다.",
       "page 180"
+    ],
+    "startPage": 52,
+    "endPage": 58,
+    "images": [
+      {
+        "src": "assets/images/note-11-왜-그들만-부자가-되는가/p052-01.jpg",
+        "filename": "p052-01.jpg",
+        "page": 52
+      },
+      {
+        "src": "assets/images/note-11-왜-그들만-부자가-되는가/p054-02.jpg",
+        "filename": "p054-02.jpg",
+        "page": 54
+      },
+      {
+        "src": "assets/images/note-11-왜-그들만-부자가-되는가/p055-03.png",
+        "filename": "p055-03.png",
+        "page": 55
+      },
+      {
+        "src": "assets/images/note-11-왜-그들만-부자가-되는가/p057-04.jpg",
+        "filename": "p057-04.jpg",
+        "page": 57
+      }
     ]
   },
   {
@@ -892,6 +1106,25 @@
       "결국 그 간 어떤 경험을 해본 적이 있는가가 가장 큰 영향을 끼친다. 아이들이 경험의 학교를 통해 무엇인가를 배워나가는",
       "것을 두려워하지 말자.",
       "끝."
+    ],
+    "startPage": 59,
+    "endPage": 64,
+    "images": [
+      {
+        "src": "assets/images/note-12-당신의-인생을-어떻게-평가할-것인가/p059-01.jpg",
+        "filename": "p059-01.jpg",
+        "page": 59
+      },
+      {
+        "src": "assets/images/note-12-당신의-인생을-어떻게-평가할-것인가/p060-02.jpg",
+        "filename": "p060-02.jpg",
+        "page": 60
+      },
+      {
+        "src": "assets/images/note-12-당신의-인생을-어떻게-평가할-것인가/p061-03.jpg",
+        "filename": "p061-03.jpg",
+        "page": 61
+      }
     ]
   },
   {
@@ -980,6 +1213,20 @@
       "집에서는 기쁨이 되고 밖에 나가면 거리낌이 없으며, 밤을 지새우거나 나그넷길에 오르거나 시골에 내려가도 우",
       "리와 함께한다.",
       "끝."
+    ],
+    "startPage": 65,
+    "endPage": 69,
+    "images": [
+      {
+        "src": "assets/images/note-13-언어-공부/p065-01.jpg",
+        "filename": "p065-01.jpg",
+        "page": 65
+      },
+      {
+        "src": "assets/images/note-13-언어-공부/p069-02.jpg",
+        "filename": "p069-02.jpg",
+        "page": 69
+      }
     ]
   },
   {
@@ -1058,6 +1305,45 @@
       "찰리 멍거님께서는 얼마전 99세의 나이로 타계하셔서 우리 곁을 떠났습니다. 하지만 세상에 좋은 지혜를 남겨주셔서 감사",
       "합니다.",
       "끝."
+    ],
+    "startPage": 70,
+    "endPage": 79,
+    "images": [
+      {
+        "src": "assets/images/note-14-가난한-찰리의-연감/p070-01.jpg",
+        "filename": "p070-01.jpg",
+        "page": 70
+      },
+      {
+        "src": "assets/images/note-14-가난한-찰리의-연감/p071-02.png",
+        "filename": "p071-02.png",
+        "page": 71
+      },
+      {
+        "src": "assets/images/note-14-가난한-찰리의-연감/p072-03.png",
+        "filename": "p072-03.png",
+        "page": 72
+      },
+      {
+        "src": "assets/images/note-14-가난한-찰리의-연감/p073-04.png",
+        "filename": "p073-04.png",
+        "page": 73
+      },
+      {
+        "src": "assets/images/note-14-가난한-찰리의-연감/p074-05.png",
+        "filename": "p074-05.png",
+        "page": 74
+      },
+      {
+        "src": "assets/images/note-14-가난한-찰리의-연감/p075-06.jpg",
+        "filename": "p075-06.jpg",
+        "page": 75
+      },
+      {
+        "src": "assets/images/note-14-가난한-찰리의-연감/p077-07.jpg",
+        "filename": "p077-07.jpg",
+        "page": 77
+      }
     ]
   },
   {
@@ -1114,6 +1400,15 @@
       "이 아주 살갑게 \"맛은 있으셨나요?\" 하고 물었다. 그리고 방금 자기가 옆집에서 얻어왔다며 갓 볶은 땅콩을 한줌",
       "내 밀었다. 나는 손을 내밀어 그 따끈따끈하고 작은 것을 받았 다. 그리고 그제야 비로소 내가 받지 못했던 오세",
       "의 편지를 뒤늦게 쥐어본 기분이 들었다."
+    ],
+    "startPage": 80,
+    "endPage": 82,
+    "images": [
+      {
+        "src": "assets/images/note-15-복자에게/p080-01.jpg",
+        "filename": "p080-01.jpg",
+        "page": 80
+      }
     ]
   },
   {
@@ -1156,6 +1451,20 @@
       "회사에서 일을 할 때, 누군가 앞에서 발표를 할 때, 제가 블로그를 쓸 때 모두 도움이 된 책으로 여러분도 기회가 있으시다",
       "면 꼭 읽어보시길 추천합니다.",
       "끝."
+    ],
+    "startPage": 83,
+    "endPage": 86,
+    "images": [
+      {
+        "src": "assets/images/note-16-스틱/p083-01.jpg",
+        "filename": "p083-01.jpg",
+        "page": 83
+      },
+      {
+        "src": "assets/images/note-16-스틱/p085-02.jpg",
+        "filename": "p085-02.jpg",
+        "page": 85
+      }
     ]
   },
   {
@@ -1324,6 +1633,50 @@
       "p364, 저자의 마지막 이야기",
       "이제 곧 국가와의 전투가 시작된다.",
       "끝."
+    ],
+    "startPage": 87,
+    "endPage": 95,
+    "images": [
+      {
+        "src": "assets/images/note-17-비트코인-블록사이즈-전쟁/p087-01.jpg",
+        "filename": "p087-01.jpg",
+        "page": 87
+      },
+      {
+        "src": "assets/images/note-17-비트코인-블록사이즈-전쟁/p088-02.png",
+        "filename": "p088-02.png",
+        "page": 88
+      },
+      {
+        "src": "assets/images/note-17-비트코인-블록사이즈-전쟁/p089-03.png",
+        "filename": "p089-03.png",
+        "page": 89
+      },
+      {
+        "src": "assets/images/note-17-비트코인-블록사이즈-전쟁/p089-04.jpg",
+        "filename": "p089-04.jpg",
+        "page": 89
+      },
+      {
+        "src": "assets/images/note-17-비트코인-블록사이즈-전쟁/p090-05.jpg",
+        "filename": "p090-05.jpg",
+        "page": 90
+      },
+      {
+        "src": "assets/images/note-17-비트코인-블록사이즈-전쟁/p090-06.jpg",
+        "filename": "p090-06.jpg",
+        "page": 90
+      },
+      {
+        "src": "assets/images/note-17-비트코인-블록사이즈-전쟁/p091-07.jpg",
+        "filename": "p091-07.jpg",
+        "page": 91
+      },
+      {
+        "src": "assets/images/note-17-비트코인-블록사이즈-전쟁/p091-08.jpg",
+        "filename": "p091-08.jpg",
+        "page": 91
+      }
     ]
   },
   {
@@ -1359,6 +1712,25 @@
       "히 읽을 만한 내용은 없다. 약간 회사 홍보 같은 내용들이어서 훌훌 넘겨 버렸음.",
       "좋은 전반부와 후진 후반부를 가진 책이었다.",
       "끝."
+    ],
+    "startPage": 96,
+    "endPage": 98,
+    "images": [
+      {
+        "src": "assets/images/note-18-무기가-되는-스토리/p096-01.jpg",
+        "filename": "p096-01.jpg",
+        "page": 96
+      },
+      {
+        "src": "assets/images/note-18-무기가-되는-스토리/p097-02.jpg",
+        "filename": "p097-02.jpg",
+        "page": 97
+      },
+      {
+        "src": "assets/images/note-18-무기가-되는-스토리/p098-03.jpg",
+        "filename": "p098-03.jpg",
+        "page": 98
+      }
     ]
   },
   {
@@ -1486,6 +1858,20 @@
       "p377-378",
       "앞으로 협상에서 이 인지편향을 잘 이용해서 성공적으로 협상을 이끌어 보아야 겠다.",
       "끝."
+    ],
+    "startPage": 99,
+    "endPage": 104,
+    "images": [
+      {
+        "src": "assets/images/note-19-인간이-되다-루이스-다트넬/p099-01.jpg",
+        "filename": "p099-01.jpg",
+        "page": 99
+      },
+      {
+        "src": "assets/images/note-19-인간이-되다-루이스-다트넬/p101-02.jpg",
+        "filename": "p101-02.jpg",
+        "page": 101
+      }
     ]
   },
   {
@@ -1581,6 +1967,25 @@
       "p58, 미래를 예측하는 것이 아닌 구상하는 능력에 대해 설명하며",
       "책 자체는 좀 허술하였지만, 그래도 간간히 통찰력이 보이는 책이었습니다.",
       "끝."
+    ],
+    "startPage": 105,
+    "endPage": 110,
+    "images": [
+      {
+        "src": "assets/images/note-20-뉴타입의시대-야마구치-슈/p105-01.jpg",
+        "filename": "p105-01.jpg",
+        "page": 105
+      },
+      {
+        "src": "assets/images/note-20-뉴타입의시대-야마구치-슈/p107-02.jpg",
+        "filename": "p107-02.jpg",
+        "page": 107
+      },
+      {
+        "src": "assets/images/note-20-뉴타입의시대-야마구치-슈/p108-03.jpg",
+        "filename": "p108-03.jpg",
+        "page": 108
+      }
     ]
   },
   {
@@ -1668,6 +2073,20 @@
       "권 읽었다고 해서 저자가 표현하고자 하는게 잘 이해는 가지 않습니다만, 혹시라도 마르크스 주의와 지리학이 어떻게 융합",
       "되는지 궁금한 사람들이 있다면 읽어보신다면 좋은 첫 이정표가 될 것으로 생각됩니다.",
       "끝."
+    ],
+    "startPage": 111,
+    "endPage": 115,
+    "images": [
+      {
+        "src": "assets/images/note-21-시공간-압축-김창현/p111-01.jpg",
+        "filename": "p111-01.jpg",
+        "page": 111
+      },
+      {
+        "src": "assets/images/note-21-시공간-압축-김창현/p112-02.png",
+        "filename": "p112-02.png",
+        "page": 112
+      }
     ]
   },
   {
@@ -1871,6 +2290,35 @@
       "은 형태를 취했다. 그러면 미래의 화폐는 어떤 형태를 가지게 될까? 과연 컴퓨터의 바이트byte 일까?\"",
       "아마 컴퓨터의 바이트가 될 것이다.",
       "https://youtu.be/6suGcEQdcDo?si=p-5Lmoz7-QEAr3aQ"
+    ],
+    "startPage": 116,
+    "endPage": 127,
+    "images": [
+      {
+        "src": "assets/images/note-22-화폐경제학/p116-01.jpg",
+        "filename": "p116-01.jpg",
+        "page": 116
+      },
+      {
+        "src": "assets/images/note-22-화폐경제학/p118-02.jpg",
+        "filename": "p118-02.jpg",
+        "page": 118
+      },
+      {
+        "src": "assets/images/note-22-화폐경제학/p119-03.jpg",
+        "filename": "p119-03.jpg",
+        "page": 119
+      },
+      {
+        "src": "assets/images/note-22-화폐경제학/p120-04.jpg",
+        "filename": "p120-04.jpg",
+        "page": 120
+      },
+      {
+        "src": "assets/images/note-22-화폐경제학/p123-05.jpg",
+        "filename": "p123-05.jpg",
+        "page": 123
+      }
     ]
   },
   {
@@ -1955,6 +2403,35 @@
       "괜찮은 책이긴 하지만 부와 행복의 원칙이란게 워낙 사람 사는 것 마다 다를 수 있기 때문에 적당히 걸러서 읽으면 좋을 듯",
       "하다. 그리고 책 볼륨은 얇다. 하루~이틀 정도면 다 읽을 수 있는 짧은 분량임.",
       "끝."
+    ],
+    "startPage": 128,
+    "endPage": 135,
+    "images": [
+      {
+        "src": "assets/images/note-23-나발-라비칸트의-부와-행복의-원칙/p128-01.jpg",
+        "filename": "p128-01.jpg",
+        "page": 128
+      },
+      {
+        "src": "assets/images/note-23-나발-라비칸트의-부와-행복의-원칙/p129-02.jpg",
+        "filename": "p129-02.jpg",
+        "page": 129
+      },
+      {
+        "src": "assets/images/note-23-나발-라비칸트의-부와-행복의-원칙/p130-03.jpg",
+        "filename": "p130-03.jpg",
+        "page": 130
+      },
+      {
+        "src": "assets/images/note-23-나발-라비칸트의-부와-행복의-원칙/p131-04.png",
+        "filename": "p131-04.png",
+        "page": 131
+      },
+      {
+        "src": "assets/images/note-23-나발-라비칸트의-부와-행복의-원칙/p135-05.jpg",
+        "filename": "p135-05.jpg",
+        "page": 135
+      }
     ]
   },
   {
@@ -1987,6 +2464,25 @@
       "으로 주는 점수입니다.",
       "더불어 저는 수잔콜린스와 존 스컬지의 아주 큰 펜이기도 합니다.",
       "(꺄악 수잔 아줌마 너무 좋아~)"
+    ],
+    "startPage": 136,
+    "endPage": 138,
+    "images": [
+      {
+        "src": "assets/images/note-24-비트코인-핸드북/p136-01.jpg",
+        "filename": "p136-01.jpg",
+        "page": 136
+      },
+      {
+        "src": "assets/images/note-24-비트코인-핸드북/p138-02.jpg",
+        "filename": "p138-02.jpg",
+        "page": 138
+      },
+      {
+        "src": "assets/images/note-24-비트코인-핸드북/p138-03.jpg",
+        "filename": "p138-03.jpg",
+        "page": 138
+      }
     ]
   },
   {
@@ -2091,6 +2587,15 @@
       "ㅋㅋㅋ",
       "이 책의 난이도는 맨큐의 경제학보다는 훨 쉬우니 경제학에 관심이 있는 일반인이라면 즐겁게 읽을 수 있을 것이다.",
       "끝."
+    ],
+    "startPage": 139,
+    "endPage": 144,
+    "images": [
+      {
+        "src": "assets/images/note-25-보이는-경제학-안-보이는-경제학/p140-01.jpg",
+        "filename": "p140-01.jpg",
+        "page": 140
+      }
     ]
   },
   {
@@ -2128,6 +2633,25 @@
       "그러니 이 책을 읽을 마음이 있다면 가벼운 마음으로 이상한 심리학 테크닉이라고 하는 부분은 다 건너뛰고 정론쪽만 알아",
       "서 걸러 읽으시길 바랍니다~~~ 적당히 도움은 됩니다 ㅎㅎ",
       "끝."
+    ],
+    "startPage": 145,
+    "endPage": 149,
+    "images": [
+      {
+        "src": "assets/images/note-26-노력이-필요-없는-영어/p146-01.jpg",
+        "filename": "p146-01.jpg",
+        "page": 146
+      },
+      {
+        "src": "assets/images/note-26-노력이-필요-없는-영어/p147-02.png",
+        "filename": "p147-02.png",
+        "page": 147
+      },
+      {
+        "src": "assets/images/note-26-노력이-필요-없는-영어/p148-03.png",
+        "filename": "p148-03.png",
+        "page": 148
+      }
     ]
   },
   {
@@ -2155,6 +2679,15 @@
       "그래도 아까 이야기 한 동기부여와 섞인 자본주의의 괴물과 같은 이상한 책이나 기도를 하면 이루어진다는 유사과학류의",
       "이상한 책들보다는 훨 나은 책이니 한 번쯤 빌리거나 사보면 괜찮을 듯 하다.",
       "끝."
+    ],
+    "startPage": 150,
+    "endPage": 152,
+    "images": [
+      {
+        "src": "assets/images/note-27-당신도-느리게-나이-들-수-있습니다/p151-01.jpg",
+        "filename": "p151-01.jpg",
+        "page": 151
+      }
     ]
   },
   {
@@ -2273,6 +2806,35 @@
       "위해 대출이 매우 비싸질 것입니다. 비트코인이 가장 바람직한 가치 저장소가 될 것이므로, 긍정적 피드백 루프",
       "는 다른 많은 통화의 가치를 상당히 떨어뜨릴 것입니다.",
       "끝."
+    ],
+    "startPage": 153,
+    "endPage": 162,
+    "images": [
+      {
+        "src": "assets/images/note-28-the-little-bitcoin-book/p154-01.jpg",
+        "filename": "p154-01.jpg",
+        "page": 154
+      },
+      {
+        "src": "assets/images/note-28-the-little-bitcoin-book/p156-02.png",
+        "filename": "p156-02.png",
+        "page": 156
+      },
+      {
+        "src": "assets/images/note-28-the-little-bitcoin-book/p157-03.jpg",
+        "filename": "p157-03.jpg",
+        "page": 157
+      },
+      {
+        "src": "assets/images/note-28-the-little-bitcoin-book/p158-04.png",
+        "filename": "p158-04.png",
+        "page": 158
+      },
+      {
+        "src": "assets/images/note-28-the-little-bitcoin-book/p159-05.jpg",
+        "filename": "p159-05.jpg",
+        "page": 159
+      }
     ]
   },
   {
@@ -2395,6 +2957,35 @@
       "힘을 겨룰 것이다.",
       "여기서 어느 편을 선택하건 그것은 당신의 자유이다.",
       "끝."
+    ],
+    "startPage": 163,
+    "endPage": 173,
+    "images": [
+      {
+        "src": "assets/images/note-29-사이퍼펑크-cyperpunks/p164-01.jpg",
+        "filename": "p164-01.jpg",
+        "page": 164
+      },
+      {
+        "src": "assets/images/note-29-사이퍼펑크-cyperpunks/p166-02.jpg",
+        "filename": "p166-02.jpg",
+        "page": 166
+      },
+      {
+        "src": "assets/images/note-29-사이퍼펑크-cyperpunks/p168-03.jpg",
+        "filename": "p168-03.jpg",
+        "page": 168
+      },
+      {
+        "src": "assets/images/note-29-사이퍼펑크-cyperpunks/p171-04.png",
+        "filename": "p171-04.png",
+        "page": 171
+      },
+      {
+        "src": "assets/images/note-29-사이퍼펑크-cyperpunks/p172-05.jpg",
+        "filename": "p172-05.jpg",
+        "page": 172
+      }
     ]
   },
   {
@@ -2537,6 +3128,35 @@
       "비싼 경우에는 어떻게 해야 할까요? 소장용 도서를 구하는 것...",
       "nozeroslope.tistory.com",
       "끝."
+    ],
+    "startPage": 174,
+    "endPage": 181,
+    "images": [
+      {
+        "src": "assets/images/note-30-인간의-인간적-활용/p174-01.png",
+        "filename": "p174-01.png",
+        "page": 174
+      },
+      {
+        "src": "assets/images/note-30-인간의-인간적-활용/p175-02.jpg",
+        "filename": "p175-02.jpg",
+        "page": 175
+      },
+      {
+        "src": "assets/images/note-30-인간의-인간적-활용/p176-03.png",
+        "filename": "p176-03.png",
+        "page": 176
+      },
+      {
+        "src": "assets/images/note-30-인간의-인간적-활용/p180-04.png",
+        "filename": "p180-04.png",
+        "page": 180
+      },
+      {
+        "src": "assets/images/note-30-인간의-인간적-활용/p181-05.jpg",
+        "filename": "p181-05.jpg",
+        "page": 181
+      }
     ]
   },
   {
@@ -2566,6 +3186,15 @@
       "년 허리와 워낙 중복되는 내용이 많아 백년 허리를 읽어본 사람에게는 그럭저럭 업데이트 정도 내용이라고 할 수 있겠다.",
       "혹시 백년허리를 안읽어 본 사람에겐 꽤 좋은 책일 수 있으니 참고하시길.",
       "끝."
+    ],
+    "startPage": 182,
+    "endPage": 184,
+    "images": [
+      {
+        "src": "assets/images/note-31-서평-백년목/p183-01.jpg",
+        "filename": "p183-01.jpg",
+        "page": 183
+      }
     ]
   },
   {
@@ -2669,6 +3298,15 @@
       "namu.wiki",
       "이 분야에 관심이 있다면 한 번쯤 읽어볼 만한 책이었다.",
       "끝."
+    ],
+    "startPage": 185,
+    "endPage": 191,
+    "images": [
+      {
+        "src": "assets/images/note-32-서평-위기에서-사람을-살립니다/p186-01.jpg",
+        "filename": "p186-01.jpg",
+        "page": 186
+      }
     ]
   },
   {
@@ -2813,6 +3451,25 @@
       "책의 겉 표지와 다르게 작가의 생각이 많이 담겨있는 에세이집으로 아조씨가 사는 것과는 많이 달러서 이해가 안되는 부분",
       "도 많았지만, 나와 다른 영역에 사는 사람의 생각을 잘 볼 수 있는 정신을 환기시키는 기회였다고 생각한다.",
       "끝."
+    ],
+    "startPage": 192,
+    "endPage": 200,
+    "images": [
+      {
+        "src": "assets/images/note-33-서평-공간의-미래-유현준/p193-01.jpg",
+        "filename": "p193-01.jpg",
+        "page": 193
+      },
+      {
+        "src": "assets/images/note-33-서평-공간의-미래-유현준/p194-02.jpg",
+        "filename": "p194-02.jpg",
+        "page": 194
+      },
+      {
+        "src": "assets/images/note-33-서평-공간의-미래-유현준/p195-03.jpg",
+        "filename": "p195-03.jpg",
+        "page": 195
+      }
     ]
   },
   {
@@ -2848,6 +3505,30 @@
       "로 건강한 허리로 돌아갈 수 도 있음을 배웠던 좋은 책이었다.",
       "내용이 워낙 간단하니 빌려보아도 좋고 원하면 구입해서 집에 두고두고 보아도 좋은 책이다.",
       "끝."
+    ],
+    "startPage": 201,
+    "endPage": 206,
+    "images": [
+      {
+        "src": "assets/images/note-34-서평-백년허리/p202-01.jpg",
+        "filename": "p202-01.jpg",
+        "page": 202
+      },
+      {
+        "src": "assets/images/note-34-서평-백년허리/p204-02.jpg",
+        "filename": "p204-02.jpg",
+        "page": 204
+      },
+      {
+        "src": "assets/images/note-34-서평-백년허리/p205-03.jpg",
+        "filename": "p205-03.jpg",
+        "page": 205
+      },
+      {
+        "src": "assets/images/note-34-서평-백년허리/p206-04.jpg",
+        "filename": "p206-04.jpg",
+        "page": 206
+      }
     ]
   },
   {
@@ -2877,6 +3558,15 @@
       "소설이라 소장할 가치는 떨어지기에 소장점수는 박합니다만 한 번쯤 즐겁게 빌려볼만한 책이라고 생각됩니다.",
       "그리고 이야기가 옵니버스 식이다 보니 아무래도 드라마로 나중에 나오면 무척 재미있을 듯 하네요!",
       "끝."
+    ],
+    "startPage": 207,
+    "endPage": 209,
+    "images": [
+      {
+        "src": "assets/images/note-35-서평-달러구트-꿈-백화점/p208-01.jpg",
+        "filename": "p208-01.jpg",
+        "page": 208
+      }
     ]
   },
   {
@@ -2910,6 +3600,15 @@
       "에 비록 책 자체에서 배울 만한 것은 없을지언정 이 책에서 다루는 테마들에 대해서 알게 된 것만으로도 많은 일반 독자에",
       "게는 도움이 될 만한 책이라고 본다.",
       "끝."
+    ],
+    "startPage": 210,
+    "endPage": 212,
+    "images": [
+      {
+        "src": "assets/images/note-36-서평-미래의-가격/p211-01.jpg",
+        "filename": "p211-01.jpg",
+        "page": 211
+      }
     ]
   },
   {
@@ -2944,6 +3643,30 @@
       "그나저나 서양철학사는 언제 다읽냐... 두껍다...",
       "책이 글씨도 작은데 1000페이지야...-_-",
       "끝."
+    ],
+    "startPage": 213,
+    "endPage": 217,
+    "images": [
+      {
+        "src": "assets/images/note-37-서평-로지코믹스/p214-01.jpg",
+        "filename": "p214-01.jpg",
+        "page": 214
+      },
+      {
+        "src": "assets/images/note-37-서평-로지코믹스/p215-02.png",
+        "filename": "p215-02.png",
+        "page": 215
+      },
+      {
+        "src": "assets/images/note-37-서평-로지코믹스/p216-03.jpg",
+        "filename": "p216-03.jpg",
+        "page": 216
+      },
+      {
+        "src": "assets/images/note-37-서평-로지코믹스/p217-04.jpg",
+        "filename": "p217-04.jpg",
+        "page": 217
+      }
     ]
   },
   {
@@ -3073,6 +3796,30 @@
       "전기통신사업법 및 시행령에 따라 불법 촬영물 등 여부를 검토 중입니다.",
       "잠시만 기다려주세요",
       "파일 다운로드"
+    ],
+    "startPage": 218,
+    "endPage": 225,
+    "images": [
+      {
+        "src": "assets/images/note-38-서평-비트코인-디플로마/p219-01.jpg",
+        "filename": "p219-01.jpg",
+        "page": 219
+      },
+      {
+        "src": "assets/images/note-38-서평-비트코인-디플로마/p220-02.jpg",
+        "filename": "p220-02.jpg",
+        "page": 220
+      },
+      {
+        "src": "assets/images/note-38-서평-비트코인-디플로마/p221-03.jpg",
+        "filename": "p221-03.jpg",
+        "page": 221
+      },
+      {
+        "src": "assets/images/note-38-서평-비트코인-디플로마/p223-04.jpg",
+        "filename": "p223-04.jpg",
+        "page": 223
+      }
     ]
   },
   {
@@ -3132,6 +3879,40 @@
       "니다.",
       "제 분야가 아니라서 흥미롭게 읽었지만 끊임 없는 자기 책 및 프로그램의 광고가 좀 불편했던 책 입니다.",
       "끝."
+    ],
+    "startPage": 226,
+    "endPage": 236,
+    "images": [
+      {
+        "src": "assets/images/note-39-서평-마케팅-설계자/p227-01.jpg",
+        "filename": "p227-01.jpg",
+        "page": 227
+      },
+      {
+        "src": "assets/images/note-39-서평-마케팅-설계자/p229-02.jpg",
+        "filename": "p229-02.jpg",
+        "page": 229
+      },
+      {
+        "src": "assets/images/note-39-서평-마케팅-설계자/p230-03.jpg",
+        "filename": "p230-03.jpg",
+        "page": 230
+      },
+      {
+        "src": "assets/images/note-39-서평-마케팅-설계자/p231-04.png",
+        "filename": "p231-04.png",
+        "page": 231
+      },
+      {
+        "src": "assets/images/note-39-서평-마케팅-설계자/p233-05.png",
+        "filename": "p233-05.png",
+        "page": 233
+      },
+      {
+        "src": "assets/images/note-39-서평-마케팅-설계자/p235-06.jpg",
+        "filename": "p235-06.jpg",
+        "page": 235
+      }
     ]
   },
   {
@@ -3162,6 +3943,20 @@
       "누군가에게 비트코인을 받아들이게 하기 위해 작업용(?) 으로 가볍게 사용할 수 있는 내용 같긴 합니다. 그나저나 누가 비",
       "트코인 관련해서 재미있는 만화 형식으로는 안만드나? 만화로 만들면 훨씬 쉽고 재미있을 것 같긴 한데요. ㅎㅎㅎ",
       "끝."
+    ],
+    "startPage": 237,
+    "endPage": 240,
+    "images": [
+      {
+        "src": "assets/images/note-40-서평-비트코인-낙관론/p238-01.jpg",
+        "filename": "p238-01.jpg",
+        "page": 238
+      },
+      {
+        "src": "assets/images/note-40-서평-비트코인-낙관론/p239-02.jpg",
+        "filename": "p239-02.jpg",
+        "page": 239
+      }
     ]
   },
   {
@@ -3257,6 +4052,15 @@
       "일하지 않는 자가 항상",
       "가장 가혹한 비판자 노릇을 하는지도 모른다",
       "호암 이병철 (1910~1987)"
+    ],
+    "startPage": 241,
+    "endPage": 246,
+    "images": [
+      {
+        "src": "assets/images/note-41-서평-호암자전/p242-01.jpg",
+        "filename": "p242-01.jpg",
+        "page": 242
+      }
     ]
   },
   {
@@ -3306,6 +4110,25 @@
       "많은 사람들이 1990년대부터 시도된 전자화폐의 실패 원인을 회사가 망했기 때문이라고 생각합니다. 분명히",
       "말하지만 전자화폐 시스템이 망한 이유는 중앙에서 제어되는 특성중앙에서 제어되는 특성을 가졌기 때문이었습니다.",
       "사토시 나카모토"
+    ],
+    "startPage": 247,
+    "endPage": 250,
+    "images": [
+      {
+        "src": "assets/images/note-42-서평-21가지-교훈-gigi/p248-01.jpg",
+        "filename": "p248-01.jpg",
+        "page": 248
+      },
+      {
+        "src": "assets/images/note-42-서평-21가지-교훈-gigi/p249-02.jpg",
+        "filename": "p249-02.jpg",
+        "page": 249
+      },
+      {
+        "src": "assets/images/note-42-서평-21가지-교훈-gigi/p250-03.png",
+        "filename": "p250-03.png",
+        "page": 250
+      }
     ]
   },
   {
@@ -3386,6 +4209,15 @@
       "집에 고이 모셔둘만한 책은 아닙니다만 (원래 소설이 소장 점수가 박함) 한 번쯤은 프랑스 문학에 관심이 있으시면 읽어볼",
       "만한 내용입니다. 내용도 평이하고 책이 길지도 않으니 빨리 읽으시는 분들은 하루 이틀만에도 다 읽으실꺼에요.",
       "끝."
+    ],
+    "startPage": 251,
+    "endPage": 255,
+    "images": [
+      {
+        "src": "assets/images/note-43-서평-이-경계를-지나면-당신의-승차권은-유효하지-않다-로맹-가리-서평-이-경계를/p252-01.jpg",
+        "filename": "p252-01.jpg",
+        "page": 252
+      }
     ]
   },
   {
@@ -3429,6 +4261,55 @@
       "뤄지 (명왕성에서의 모습)",
       "제 1대 검잡이",
       "청신에게 선물한 별을 바라보고 있는 원텐밍"
+    ],
+    "startPage": 256,
+    "endPage": 265,
+    "images": [
+      {
+        "src": "assets/images/note-44-서평-삼체3-암흑의-숲-류츠신/p257-01.jpg",
+        "filename": "p257-01.jpg",
+        "page": 257
+      },
+      {
+        "src": "assets/images/note-44-서평-삼체3-암흑의-숲-류츠신/p258-02.jpg",
+        "filename": "p258-02.jpg",
+        "page": 258
+      },
+      {
+        "src": "assets/images/note-44-서평-삼체3-암흑의-숲-류츠신/p259-03.jpg",
+        "filename": "p259-03.jpg",
+        "page": 259
+      },
+      {
+        "src": "assets/images/note-44-서평-삼체3-암흑의-숲-류츠신/p260-04.jpg",
+        "filename": "p260-04.jpg",
+        "page": 260
+      },
+      {
+        "src": "assets/images/note-44-서평-삼체3-암흑의-숲-류츠신/p261-05.jpg",
+        "filename": "p261-05.jpg",
+        "page": 261
+      },
+      {
+        "src": "assets/images/note-44-서평-삼체3-암흑의-숲-류츠신/p262-06.png",
+        "filename": "p262-06.png",
+        "page": 262
+      },
+      {
+        "src": "assets/images/note-44-서평-삼체3-암흑의-숲-류츠신/p263-07.png",
+        "filename": "p263-07.png",
+        "page": 263
+      },
+      {
+        "src": "assets/images/note-44-서평-삼체3-암흑의-숲-류츠신/p264-08.png",
+        "filename": "p264-08.png",
+        "page": 264
+      },
+      {
+        "src": "assets/images/note-44-서평-삼체3-암흑의-숲-류츠신/p265-09.png",
+        "filename": "p265-09.png",
+        "page": 265
+      }
     ]
   },
   {
@@ -3467,6 +4348,20 @@
       "정말 엔딩 장면 최고였어!!",
       "소장 가치 :",
       "10점 만점에 7점 드립니다!"
+    ],
+    "startPage": 266,
+    "endPage": 269,
+    "images": [
+      {
+        "src": "assets/images/note-45-서평-삼체2-암흑의-숲-류츠신/p267-01.jpg",
+        "filename": "p267-01.jpg",
+        "page": 267
+      },
+      {
+        "src": "assets/images/note-45-서평-삼체2-암흑의-숲-류츠신/p268-02.jpg",
+        "filename": "p268-02.jpg",
+        "page": 268
+      }
     ]
   },
   {
@@ -3559,6 +4454,35 @@
       "기분이기 때문인가 봉가보다~ 에이 그냥 기분인가 봉다~",
       "출처 : 만물의 진리가 담겨있는 나무위키 화면 캡쳐",
       "끝."
+    ],
+    "startPage": 270,
+    "endPage": 277,
+    "images": [
+      {
+        "src": "assets/images/note-46-서평-논쟁에서-이기는-38가지-방법-쇼펜하우어/p271-01.jpg",
+        "filename": "p271-01.jpg",
+        "page": 271
+      },
+      {
+        "src": "assets/images/note-46-서평-논쟁에서-이기는-38가지-방법-쇼펜하우어/p272-02.png",
+        "filename": "p272-02.png",
+        "page": 272
+      },
+      {
+        "src": "assets/images/note-46-서평-논쟁에서-이기는-38가지-방법-쇼펜하우어/p273-03.jpg",
+        "filename": "p273-03.jpg",
+        "page": 273
+      },
+      {
+        "src": "assets/images/note-46-서평-논쟁에서-이기는-38가지-방법-쇼펜하우어/p275-04.jpg",
+        "filename": "p275-04.jpg",
+        "page": 275
+      },
+      {
+        "src": "assets/images/note-46-서평-논쟁에서-이기는-38가지-방법-쇼펜하우어/p277-05.png",
+        "filename": "p277-05.png",
+        "page": 277
+      }
     ]
   },
   {
@@ -3611,6 +4535,35 @@
       "소장 가치 :",
       "10점 만점에 9점 드립니다!",
       "최강 사노비의 비법이 고스란히 담겨있는 보물, 놓치지 말라."
+    ],
+    "startPage": 278,
+    "endPage": 283,
+    "images": [
+      {
+        "src": "assets/images/note-47-서평-일이란-무엇인가-고동진/p279-01.jpg",
+        "filename": "p279-01.jpg",
+        "page": 279
+      },
+      {
+        "src": "assets/images/note-47-서평-일이란-무엇인가-고동진/p280-02.png",
+        "filename": "p280-02.png",
+        "page": 280
+      },
+      {
+        "src": "assets/images/note-47-서평-일이란-무엇인가-고동진/p280-03.png",
+        "filename": "p280-03.png",
+        "page": 280
+      },
+      {
+        "src": "assets/images/note-47-서평-일이란-무엇인가-고동진/p281-04.jpg",
+        "filename": "p281-04.jpg",
+        "page": 281
+      },
+      {
+        "src": "assets/images/note-47-서평-일이란-무엇인가-고동진/p282-05.jpg",
+        "filename": "p282-05.jpg",
+        "page": 282
+      }
     ]
   },
   {
@@ -3670,6 +4623,35 @@
       "7~8점 : 사서 보는거 추천",
       "9~10 점 : 후손에게 남겨야 하는 책",
       "문화대혁명의 광기와 외계인의 침공이 이어지는 보기 드믄 엄청난 상상력의 작품."
+    ],
+    "startPage": 284,
+    "endPage": 292,
+    "images": [
+      {
+        "src": "assets/images/note-48-서평-삼체-1부-류츠신/p285-01.jpg",
+        "filename": "p285-01.jpg",
+        "page": 285
+      },
+      {
+        "src": "assets/images/note-48-서평-삼체-1부-류츠신/p286-02.jpg",
+        "filename": "p286-02.jpg",
+        "page": 286
+      },
+      {
+        "src": "assets/images/note-48-서평-삼체-1부-류츠신/p287-03.jpg",
+        "filename": "p287-03.jpg",
+        "page": 287
+      },
+      {
+        "src": "assets/images/note-48-서평-삼체-1부-류츠신/p290-04.png",
+        "filename": "p290-04.png",
+        "page": 290
+      },
+      {
+        "src": "assets/images/note-48-서평-삼체-1부-류츠신/p291-05.png",
+        "filename": "p291-05.png",
+        "page": 291
+      }
     ]
   },
   {
@@ -3757,6 +4739,30 @@
       "소장 가치 :",
       "10점 만점에 7점 드립니다!",
       "인류의 멜서스 트랩 탈출 여정을 적절한 근거로 담담하게 잘 설명한 책"
+    ],
+    "startPage": 293,
+    "endPage": 301,
+    "images": [
+      {
+        "src": "assets/images/note-49-서평-인류의-여정-오데드-겔로어/p294-01.jpg",
+        "filename": "p294-01.jpg",
+        "page": 294
+      },
+      {
+        "src": "assets/images/note-49-서평-인류의-여정-오데드-겔로어/p296-02.jpg",
+        "filename": "p296-02.jpg",
+        "page": 296
+      },
+      {
+        "src": "assets/images/note-49-서평-인류의-여정-오데드-겔로어/p297-03.jpg",
+        "filename": "p297-03.jpg",
+        "page": 297
+      },
+      {
+        "src": "assets/images/note-49-서평-인류의-여정-오데드-겔로어/p299-04.jpg",
+        "filename": "p299-04.jpg",
+        "page": 299
+      }
     ]
   },
   {
@@ -3936,6 +4942,30 @@
       "안뇽!",
       "끝!",
       "책을 읽읍시다"
+    ],
+    "startPage": 302,
+    "endPage": 311,
+    "images": [
+      {
+        "src": "assets/images/note-50-어떤책은-버려지는가-그리고-어떤책은-살아남는가-23-3q/p302-01.jpg",
+        "filename": "p302-01.jpg",
+        "page": 302
+      },
+      {
+        "src": "assets/images/note-50-어떤책은-버려지는가-그리고-어떤책은-살아남는가-23-3q/p303-02.jpg",
+        "filename": "p303-02.jpg",
+        "page": 303
+      },
+      {
+        "src": "assets/images/note-50-어떤책은-버려지는가-그리고-어떤책은-살아남는가-23-3q/p304-03.jpg",
+        "filename": "p304-03.jpg",
+        "page": 304
+      },
+      {
+        "src": "assets/images/note-50-어떤책은-버려지는가-그리고-어떤책은-살아남는가-23-3q/p311-04.jpg",
+        "filename": "p311-04.jpg",
+        "page": 311
+      }
     ]
   },
   {
@@ -4004,6 +5034,15 @@
       "실에서도 능력이나 성과보다 신뢰도를 우선시하 는데, 왜 비즈니스에서는 아직도 성과를 더 중요하게 생각할",
       "까?",
       "p174"
+    ],
+    "startPage": 312,
+    "endPage": 317,
+    "images": [
+      {
+        "src": "assets/images/note-51-서평-인피니트게임-사이먼-시넥/p313-01.jpg",
+        "filename": "p313-01.jpg",
+        "page": 313
+      }
     ]
   },
   {
@@ -4041,6 +5080,35 @@
       "결론적으로 돈 아깝지 않았음.",
       "사서 봐도 좋은책. 22천원.",
       "끝."
+    ],
+    "startPage": 318,
+    "endPage": 326,
+    "images": [
+      {
+        "src": "assets/images/note-52-인간-본성-불패의-법칙/p319-01.jpg",
+        "filename": "p319-01.jpg",
+        "page": 319
+      },
+      {
+        "src": "assets/images/note-52-인간-본성-불패의-법칙/p321-02.jpg",
+        "filename": "p321-02.jpg",
+        "page": 321
+      },
+      {
+        "src": "assets/images/note-52-인간-본성-불패의-법칙/p323-03.jpg",
+        "filename": "p323-03.jpg",
+        "page": 323
+      },
+      {
+        "src": "assets/images/note-52-인간-본성-불패의-법칙/p325-04.jpg",
+        "filename": "p325-04.jpg",
+        "page": 325
+      },
+      {
+        "src": "assets/images/note-52-인간-본성-불패의-법칙/p326-05.png",
+        "filename": "p326-05.png",
+        "page": 326
+      }
     ]
   },
   {
@@ -4067,6 +5135,15 @@
       "30대 초반 : 농구",
       "30대 중반 : 수영",
       "30대 후반 : 과로로 ?돼지 됨ㅋㅋ"
+    ],
+    "startPage": 327,
+    "endPage": 329,
+    "images": [
+      {
+        "src": "assets/images/note-53-백년운동-정선근/p328-01.jpg",
+        "filename": "p328-01.jpg",
+        "page": 328
+      }
     ]
   },
   {
@@ -4085,6 +5162,15 @@
       "성공에 대한 워낙 ?똥같은 책들이 많아서 이것도 별로 기대는 안하고 봤는데 ?좋은 책이었다.",
       "논문 저자와 피인용 횟수를 분석해 네트워크에서 널리 퍼지고 유명해지는 패턴을 설명하는 내용으로 결론 자체는 우리가",
       "늘 알고 있던 그런거지만 그 이유를 과학적으로 풀어냈다는게 참 좋은 책이었다!"
+    ],
+    "startPage": 330,
+    "endPage": 332,
+    "images": [
+      {
+        "src": "assets/images/note-54-서평-성공의-공식-포뮬러/p331-01.jpg",
+        "filename": "p331-01.jpg",
+        "page": 331
+      }
     ]
   },
   {
@@ -4103,6 +5189,15 @@
       "송길영 선생님의 책을 오래간만에 읽었다. 좋아하는 분인데, 책 자체는 늘 유투브 나와서 하시는 이야기의 활자 버전이다.",
       "그러니 구테여 책을 사서 보지 않아도 된다. 하지만 송선생님 특유의 유머를 잘 섞어 즐거운 독서를 하게 해주는 책이니 데",
       "이터 분석 통한 트렌드 관심 있는 분들께는 추천~"
+    ],
+    "startPage": 333,
+    "endPage": 335,
+    "images": [
+      {
+        "src": "assets/images/note-55-그냥-하지-말라-송길영/p334-01.jpg",
+        "filename": "p334-01.jpg",
+        "page": 334
+      }
     ]
   },
   {
@@ -4187,6 +5282,25 @@
       "https://youtu.be/v-y-2fPJLRQ",
       "안녕 친구들! 오늘은 여기까지!",
       "끝"
+    ],
+    "startPage": 336,
+    "endPage": 343,
+    "images": [
+      {
+        "src": "assets/images/note-56-서평-howto-get-rich-데니스펠릭스/p337-01.jpg",
+        "filename": "p337-01.jpg",
+        "page": 337
+      },
+      {
+        "src": "assets/images/note-56-서평-howto-get-rich-데니스펠릭스/p339-02.jpg",
+        "filename": "p339-02.jpg",
+        "page": 339
+      },
+      {
+        "src": "assets/images/note-56-서평-howto-get-rich-데니스펠릭스/p340-03.png",
+        "filename": "p340-03.png",
+        "page": 340
+      }
     ]
   },
   {
@@ -4224,6 +5338,15 @@
       "책 읽고 싶으신 분께 드리는 말씀 :",
       "분량에 비해서 가격이 지나치게 높으므로 가능하시다면 도서관에서 빌려보시거나 중고로 구입해 보시길 추천합니다.",
       "끝!"
+    ],
+    "startPage": 344,
+    "endPage": 347,
+    "images": [
+      {
+        "src": "assets/images/note-57-서평-운을-읽는-변호사-니시나카-쓰토무/p345-01.jpg",
+        "filename": "p345-01.jpg",
+        "page": 345
+      }
     ]
   },
   {
@@ -4298,6 +5421,20 @@
       "원에 대한 글쓴이의 주장도 일리가 있겠으나 그러한 준비 없이 그저 연속게임을 하는 시장 경제에서는 모든것이 다 잘 돌",
       "아갈 것이다 라는 생각은 상당히 풋풋한 느낌이 난다. 장사 한번 해보셔야...",
       "암튼 주말간 읽었는데 오늘은 여기까지 끝~"
+    ],
+    "startPage": 348,
+    "endPage": 352,
+    "images": [
+      {
+        "src": "assets/images/note-58-서평-국가의-해부-머레이-n-라스바드/p349-01.jpg",
+        "filename": "p349-01.jpg",
+        "page": 349
+      },
+      {
+        "src": "assets/images/note-58-서평-국가의-해부-머레이-n-라스바드/p351-02.png",
+        "filename": "p351-02.png",
+        "page": 351
+      }
     ]
   },
   {
@@ -4344,6 +5481,25 @@
       "His voice isn't angry. It's HOLLOW, which is worse.",
       "Alreadly the boy with the bread is slipping away from me.",
       "흨흨흨 불쌍한 피타 ㅠㅠ 물론 나는 3권까지 다 읽어서 최후의 승자가 누군지 안다 ㅋㅋ"
+    ],
+    "startPage": 353,
+    "endPage": 358,
+    "images": [
+      {
+        "src": "assets/images/note-59-서평-헝거게임-수잔콜린스/p354-01.jpg",
+        "filename": "p354-01.jpg",
+        "page": 354
+      },
+      {
+        "src": "assets/images/note-59-서평-헝거게임-수잔콜린스/p355-02.jpg",
+        "filename": "p355-02.jpg",
+        "page": 355
+      },
+      {
+        "src": "assets/images/note-59-서평-헝거게임-수잔콜린스/p356-03.jpg",
+        "filename": "p356-03.jpg",
+        "page": 356
+      }
     ]
   },
   {
@@ -4379,6 +5535,15 @@
       "좋다! 좋다! 좋다!",
       "이것은 스포일러. 질문?",
       "에이드리안 언어"
+    ],
+    "startPage": 359,
+    "endPage": 362,
+    "images": [
+      {
+        "src": "assets/images/note-60-서평-프로젝트-헤일메리-엔디-위어/p360-01.jpg",
+        "filename": "p360-01.jpg",
+        "page": 360
+      }
     ]
   },
   {
@@ -4419,6 +5584,20 @@
       "아조씨의 문체에 많은 영향을 준 사람이고, 아조씨가 마음 깊이 좋아하는 작가기에 여러분께도 추천합니다.",
       "어디 출판사로부터는 돈 한푼 못 받았습니다. ㅋㅋㅋ",
       "안뇽!"
+    ],
+    "startPage": 363,
+    "endPage": 366,
+    "images": [
+      {
+        "src": "assets/images/note-61-서평-마지막-황제-존-스칼지/p364-01.jpg",
+        "filename": "p364-01.jpg",
+        "page": 364
+      },
+      {
+        "src": "assets/images/note-61-서평-마지막-황제-존-스칼지/p366-02.png",
+        "filename": "p366-02.png",
+        "page": 366
+      }
     ]
   },
   {
@@ -4465,6 +5644,15 @@
       "주는 책이었다. 비트코인의 근본 철학에 대해 다시한번 고민해볼 수 있었고, 아직도 10여년전에 질문했던 내용들에서 크",
       "게 달라진건 없구나 라는 걸 느끼게도 되었다.",
       "좋은 책이었다."
+    ],
+    "startPage": 367,
+    "endPage": 370,
+    "images": [
+      {
+        "src": "assets/images/note-62-서평-사토시의-서/p368-01.jpg",
+        "filename": "p368-01.jpg",
+        "page": 368
+      }
     ]
   },
   {
@@ -4677,6 +5865,15 @@
       "한국어 버전은 좀 쌈마이하게 나왔지만, 제목은 원래 Bitcoin standard 이다. 금본위제가 Gold standard...",
       "[서평] 달러는 왜 비트코인을 싫어하는가 (?)",
       "(상편에 이어서 계속) 파트6와 파트 7은 저자가 가지고 있는 기존 주류 경제학에 대한 비판으로 구성되어 ..."
+    ],
+    "startPage": 371,
+    "endPage": 381,
+    "images": [
+      {
+        "src": "assets/images/note-63-서평-달러는-왜-비트코인을-싫어하는가/p372-01.jpg",
+        "filename": "p372-01.jpg",
+        "page": 372
+      }
     ]
   },
   {
@@ -4733,6 +5930,25 @@
       "황현희 님의 수백억 자산가인 지인에 대한 이야기이다. '비겁한 투자'를 하고 있는 좋은 예 이다. 우리도 평소에 일을 하지",
       "만 '잔심'을 가지고 투자 대상을 보고 있다가 기회가 오면 그간 갈아두었던 칼을 깊숙히 한번 찔러야 한다.",
       "정작 그 때 가면 칼이 없다고 한다."
+    ],
+    "startPage": 382,
+    "endPage": 387,
+    "images": [
+      {
+        "src": "assets/images/note-64-서평-비겁한-돈-황현희-제갈현열/p383-01.jpg",
+        "filename": "p383-01.jpg",
+        "page": 383
+      },
+      {
+        "src": "assets/images/note-64-서평-비겁한-돈-황현희-제갈현열/p384-02.png",
+        "filename": "p384-02.png",
+        "page": 384
+      },
+      {
+        "src": "assets/images/note-64-서평-비겁한-돈-황현희-제갈현열/p385-03.jpg",
+        "filename": "p385-03.jpg",
+        "page": 385
+      }
     ]
   },
   {
@@ -4840,6 +6056,20 @@
       "\" - 랠프 머클, 2016년-",
       "p264~265",
       "(하편에서 계속)"
+    ],
+    "startPage": 388,
+    "endPage": 393,
+    "images": [
+      {
+        "src": "assets/images/note-65-서평-달러는-왜-비트코인을-싫어하는가/p389-01.jpg",
+        "filename": "p389-01.jpg",
+        "page": 389
+      },
+      {
+        "src": "assets/images/note-65-서평-달러는-왜-비트코인을-싫어하는가/p390-02.jpg",
+        "filename": "p390-02.jpg",
+        "page": 390
+      }
     ]
   },
   {
@@ -4971,6 +6201,15 @@
       "의 소비가 자본주의의 정상적 일부라면, 호흡곤란도 호흡의 정상적 일부다.",
       "p148",
       "나머지는 중편에서 계속."
+    ],
+    "startPage": 394,
+    "endPage": 400,
+    "images": [
+      {
+        "src": "assets/images/note-66-서평-달러는-왜-비트코인을-싫어하는가/p395-01.jpg",
+        "filename": "p395-01.jpg",
+        "page": 395
+      }
     ]
   },
   {
@@ -4995,6 +6234,20 @@
       "이 배나온 아조씨의 건방진 리뷰를 보고 피가 끓으셨다면 네 당신 판단이 맞습니다.",
       "제가 잘못 읽은 겁니다. 미리 도자개 박습니다. 미안합니다.",
       "끝."
+    ],
+    "startPage": 401,
+    "endPage": 403,
+    "images": [
+      {
+        "src": "assets/images/note-67-서평-젊은-부자의-법칙/p402-01.jpg",
+        "filename": "p402-01.jpg",
+        "page": 402
+      },
+      {
+        "src": "assets/images/note-67-서평-젊은-부자의-법칙/p403-02.png",
+        "filename": "p403-02.png",
+        "page": 403
+      }
     ]
   },
   {
@@ -5048,6 +6301,15 @@
       "이렇게 긴 200년이라는 역사를 가진 나라가 겪었던 자본주의의 고통을 대한민국에서는 아주 빠르게 50여년만에 극복하",
       "고 자본주의의 선두에 대한민국이 서있다는 것에 진정한 국뽕을 느끼며. 오늘은 여기까지 합니다.",
       "끝."
+    ],
+    "startPage": 404,
+    "endPage": 407,
+    "images": [
+      {
+        "src": "assets/images/note-68-서평-자본의-미스터리-에르난도-데소토/p405-01.jpg",
+        "filename": "p405-01.jpg",
+        "page": 405
+      }
     ]
   },
   {
@@ -5103,6 +6365,15 @@
       "고 앞으로 어떻게 어려운 결정들을 해 나갈 것인지 많은 생각을 해볼 수 있는 좋은 책고 앞으로 어떻게 어려운 결정들을 해 나갈 것인지 많은 생각을 해볼 수 있는 좋은 책이라고 생각한다.",
       "일단은 집에 두고, 내 아이가 30살 중반이 넘으면 한번 읽으라고 추천해줘야 겠다.",
       "끝."
+    ],
+    "startPage": 408,
+    "endPage": 412,
+    "images": [
+      {
+        "src": "assets/images/note-69-서평-연금술사/p409-01.jpg",
+        "filename": "p409-01.jpg",
+        "page": 409
+      }
     ]
   },
   {
@@ -5136,6 +6407,15 @@
       "참 읽은지 꽤 지났는데도 아직도 마음이 복잡 미묘한 내용이네요.",
       "언젠가 생각이 나면 다시끔 읽어보고 싶은 책입니다.",
       "참고로 작년에 넷플릭스에서도 나왔다고 하네요. 평가는 원작의 매력적인 캐릭터들을 하나도 살리지 못했다는 평 입니다."
+    ],
+    "startPage": 413,
+    "endPage": 415,
+    "images": [
+      {
+        "src": "assets/images/note-70-서평-자기앞의-생-에밀-아자르/p414-01.jpg",
+        "filename": "p414-01.jpg",
+        "page": 414
+      }
     ]
   },
   {
@@ -5364,6 +6644,50 @@
       "나중에 연옥에 있는 친구들은 어떻게 되었는지도 포스팅 해줄께!",
       "안뇽! 왈오오오오옹롸오오옹왈!",
       "정리 빡세다!"
+    ],
+    "startPage": 416,
+    "endPage": 430,
+    "images": [
+      {
+        "src": "assets/images/note-71-어떤책은-버려지는가-그리고-어떤책은-살아남는가/p417-01.jpg",
+        "filename": "p417-01.jpg",
+        "page": 417
+      },
+      {
+        "src": "assets/images/note-71-어떤책은-버려지는가-그리고-어떤책은-살아남는가/p418-02.jpg",
+        "filename": "p418-02.jpg",
+        "page": 418
+      },
+      {
+        "src": "assets/images/note-71-어떤책은-버려지는가-그리고-어떤책은-살아남는가/p421-03.jpg",
+        "filename": "p421-03.jpg",
+        "page": 421
+      },
+      {
+        "src": "assets/images/note-71-어떤책은-버려지는가-그리고-어떤책은-살아남는가/p422-04.jpg",
+        "filename": "p422-04.jpg",
+        "page": 422
+      },
+      {
+        "src": "assets/images/note-71-어떤책은-버려지는가-그리고-어떤책은-살아남는가/p424-05.jpg",
+        "filename": "p424-05.jpg",
+        "page": 424
+      },
+      {
+        "src": "assets/images/note-71-어떤책은-버려지는가-그리고-어떤책은-살아남는가/p426-06.jpg",
+        "filename": "p426-06.jpg",
+        "page": 426
+      },
+      {
+        "src": "assets/images/note-71-어떤책은-버려지는가-그리고-어떤책은-살아남는가/p428-07.jpg",
+        "filename": "p428-07.jpg",
+        "page": 428
+      },
+      {
+        "src": "assets/images/note-71-어떤책은-버려지는가-그리고-어떤책은-살아남는가/p430-08.jpg",
+        "filename": "p430-08.jpg",
+        "page": 430
+      }
     ]
   },
   {
@@ -5403,6 +6727,15 @@
       "그리고 두루마기 휴지도 티슈도 아닌 제 3의 것이 테이블에 올려지기 시작했다 카더라.",
       "가볍게 한번 쯤 머리 전환도 할겸 읽어볼만한 책이었읍니다.",
       "끝."
+    ],
+    "startPage": 431,
+    "endPage": 434,
+    "images": [
+      {
+        "src": "assets/images/note-72-서평-관점을-디자인-하라-박용후/p432-01.jpg",
+        "filename": "p432-01.jpg",
+        "page": 432
+      }
     ]
   },
   {
@@ -5431,6 +6764,15 @@
       "책 자체는 재미있다.",
       "마지막에 해결책을 제시하는 부분도 좋았고.",
       "맹신만 말자."
+    ],
+    "startPage": 435,
+    "endPage": 437,
+    "images": [
+      {
+        "src": "assets/images/note-73-서평-클루지-개리-마커스/p436-01.jpg",
+        "filename": "p436-01.jpg",
+        "page": 436
+      }
     ]
   },
   {
@@ -5455,6 +6797,15 @@
       "확률적 사고에 대해서 개념이 없으신 분들께는 가볍게 읽는 용도로 한 번 쯤 볼만한 책이지만 '블랙 스완'을 읽어본 분들께",
       "는 추천하지 않는다.",
       "끝!"
+    ],
+    "startPage": 438,
+    "endPage": 440,
+    "images": [
+      {
+        "src": "assets/images/note-74-서평-확률적-사고의-힘-다부치-나오야/p439-01.jpg",
+        "filename": "p439-01.jpg",
+        "page": 439
+      }
     ]
   },
   {
@@ -5498,6 +6849,25 @@
       "요즘 트렌드인 매운맛과는 다른 순한맛 책이라서 재미 자체는 좀 떨어지지만 그래도 구라 없이 솔직하게 여러가지 이야기",
       "를 담고 있기 때문에 분명 읽는 사람마다 배울만한 걸 한 두개 이상씩은 건질 듯 하다.",
       "끝!"
+    ],
+    "startPage": 441,
+    "endPage": 444,
+    "images": [
+      {
+        "src": "assets/images/note-75-서평-돈의-심리학-모건-하우절/p442-01.jpg",
+        "filename": "p442-01.jpg",
+        "page": 442
+      },
+      {
+        "src": "assets/images/note-75-서평-돈의-심리학-모건-하우절/p443-02.jpg",
+        "filename": "p443-02.jpg",
+        "page": 443
+      },
+      {
+        "src": "assets/images/note-75-서평-돈의-심리학-모건-하우절/p444-03.jpg",
+        "filename": "p444-03.jpg",
+        "page": 444
+      }
     ]
   },
   {
@@ -5530,6 +6900,15 @@
       "가니스탄과 우크라이나 꼴 보면 바이든도 같은 정책을 계승하는 걸로 보임.",
       "6. 이대로 가다보면 결국 2차대전 발생하기 전 상황으로 각 국가들의 각자도생 상황이 벌어질 것임. 한가지 차이점",
       "은 그 때는 핵무기가 없었지만, 이제는 다들 하나씩 들고 있음. ㄷㄷㄷㄷ"
+    ],
+    "startPage": 445,
+    "endPage": 447,
+    "images": [
+      {
+        "src": "assets/images/note-76-서평-밀림의-귀환-로버트-케이건/p446-01.jpg",
+        "filename": "p446-01.jpg",
+        "page": 446
+      }
     ]
   },
   {
@@ -5562,6 +6941,20 @@
       "책 내용 중에서 업무 안바쁜날/바쁜날 비교하면서 시간대별로 쓴 글이 있는데 읽는 이 아재가 숨이 막히더라.",
       "월스트리트 노비는 노동 강도도 월드클래스더라 ㄷㄷㄷ",
       "한번 쯤 이쪽 세계 궁금하신 분들은 읽어보면 재미있을 듯 합니다~"
+    ],
+    "startPage": 448,
+    "endPage": 451,
+    "images": [
+      {
+        "src": "assets/images/note-77-서평-디-앤서-뉴욕주민/p449-01.jpg",
+        "filename": "p449-01.jpg",
+        "page": 449
+      },
+      {
+        "src": "assets/images/note-77-서평-디-앤서-뉴욕주민/p450-02.png",
+        "filename": "p450-02.png",
+        "page": 450
+      }
     ]
   },
   {
@@ -5587,6 +6980,20 @@
       "중간중간 레즈비언 / 백합 (?) 느낌의 묘사들이 있는데 혹시 저자가 LGBT 이신가 하는 생각이 들긴 했음. 실제로 어떠한지",
       "는 아조씨도 모름. 뭐 그런가보다 했음. 특이한건 단편의 주인공들이 모두 여자 또는 여자로 생각되는 중성적인 인물들임.",
       "결론은 그냥 그랬습니다 ㅎㅎ 왈왈!"
+    ],
+    "startPage": 452,
+    "endPage": 455,
+    "images": [
+      {
+        "src": "assets/images/note-78-서평-우리가-빛의-속도로-갈-수-없다면/p453-01.jpg",
+        "filename": "p453-01.jpg",
+        "page": 453
+      },
+      {
+        "src": "assets/images/note-78-서평-우리가-빛의-속도로-갈-수-없다면/p454-02.png",
+        "filename": "p454-02.png",
+        "page": 454
+      }
     ]
   },
   {
@@ -5637,6 +7044,40 @@
       "도 이점 하나는 인정해 주지 ㅋㅋㅋㅋㅋ (아조씨는 코를 많이 골아서 각방 쓰는 중)",
       "오늘도 개소리 들어줘서 고마워 친구들! 안녕!",
       "오로오오오왈오오왕와왈!!"
+    ],
+    "startPage": 456,
+    "endPage": 467,
+    "images": [
+      {
+        "src": "assets/images/note-79-서평-아주작은-습관의-힘-atomic-habits/p457-01.jpg",
+        "filename": "p457-01.jpg",
+        "page": 457
+      },
+      {
+        "src": "assets/images/note-79-서평-아주작은-습관의-힘-atomic-habits/p459-02.jpg",
+        "filename": "p459-02.jpg",
+        "page": 459
+      },
+      {
+        "src": "assets/images/note-79-서평-아주작은-습관의-힘-atomic-habits/p461-03.jpg",
+        "filename": "p461-03.jpg",
+        "page": 461
+      },
+      {
+        "src": "assets/images/note-79-서평-아주작은-습관의-힘-atomic-habits/p463-04.jpg",
+        "filename": "p463-04.jpg",
+        "page": 463
+      },
+      {
+        "src": "assets/images/note-79-서평-아주작은-습관의-힘-atomic-habits/p465-05.jpg",
+        "filename": "p465-05.jpg",
+        "page": 465
+      },
+      {
+        "src": "assets/images/note-79-서평-아주작은-습관의-힘-atomic-habits/p467-06.jpg",
+        "filename": "p467-06.jpg",
+        "page": 467
+      }
     ]
   },
   {
@@ -5714,6 +7155,35 @@
       "사회초년생 친구들한테 도움이 되었음 좋겠어~",
       "오늘은 여기까지~",
       "감사합니다. 왈오옹오왈."
+    ],
+    "startPage": 468,
+    "endPage": 475,
+    "images": [
+      {
+        "src": "assets/images/note-80-서평-세이노의-가르침/p469-01.jpg",
+        "filename": "p469-01.jpg",
+        "page": 469
+      },
+      {
+        "src": "assets/images/note-80-서평-세이노의-가르침/p471-02.jpg",
+        "filename": "p471-02.jpg",
+        "page": 471
+      },
+      {
+        "src": "assets/images/note-80-서평-세이노의-가르침/p472-03.jpg",
+        "filename": "p472-03.jpg",
+        "page": 472
+      },
+      {
+        "src": "assets/images/note-80-서평-세이노의-가르침/p473-04.jpg",
+        "filename": "p473-04.jpg",
+        "page": 473
+      },
+      {
+        "src": "assets/images/note-80-서평-세이노의-가르침/p474-05.jpg",
+        "filename": "p474-05.jpg",
+        "page": 474
+      }
     ]
   },
   {
@@ -5737,6 +7207,15 @@
       "있어서 실제로는 이거의 반권이다)",
       "여러분 겉멋 든 영문 글쓰기나 한글 글 쓰기 책 보기 전에 일단 이거부터 한권 보면 도움이 꽤 될껍니다.",
       "※ 서평은 멋있어 보이고 싶어서 왈로로로로오왈 거리고 짖는건 하지 않기로 했음."
+    ],
+    "startPage": 476,
+    "endPage": 478,
+    "images": [
+      {
+        "src": "assets/images/note-81-서평-영어-글쓰기의-기본/p477-01.jpg",
+        "filename": "p477-01.jpg",
+        "page": 477
+      }
     ]
   },
   {
@@ -5793,6 +7272,9 @@
       "씨발 이렇게 조금 주고 일은 개같이 시키는데 빨랑 그만 두고 싶다......라고 하지만 돈이 없어서 오늘도 이 천한 놈은 일터",
       "로 끌려갑니다.",
       "안뇽!"
-    ]
+    ],
+    "startPage": 479,
+    "endPage": 480,
+    "images": []
   }
 ]
