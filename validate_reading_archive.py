@@ -16,6 +16,27 @@ from PIL import Image, ImageStat
 
 ROOT = Path(__file__).resolve().parent
 PUBLIC_BASE = "https://ajotsee.github.io/reading-archive/"
+BROKEN_TEXT_PATTERNS = [
+    "비트코인가격",
+    "싶다 면",
+    "모이는지금",
+    "읽으면의미",
+    "읽으니참",
+    "코어개발자",
+    "돈&#x27;비트코인",
+    "라이 벌",
+    "함비트코인",
+    "됨사람",
+    "됨몰입",
+    "힘훌륭한",
+    "거래 소",
+    "두입장",
+    "영희로과",
+    "부여합 니다",
+    "이었 습니다",
+    "했 습니다",
+    "였 습니다",
+]
 
 
 class ImageTagParser(HTMLParser):
@@ -94,11 +115,14 @@ def validate(public: bool = False) -> int:
     slugs = [str(entry["slug"]) for entry in data]
     note_pages = sorted((ROOT / "notes").glob("note-*/index.html"))
     note_slugs = [path.parent.name for path in note_pages]
+    image_dirs = sorted(path.name for path in (ROOT / "assets" / "images").glob("note-*") if path.is_dir())
 
     if len(data) != 82:
         errors.append(f"expected 82 entries, found {len(data)}")
     if note_slugs != sorted(slugs):
         errors.append("note page slugs do not match data slugs")
+    if image_dirs != sorted(slugs):
+        errors.append("image directory slugs do not exactly match data slugs")
 
     html_pages = [ROOT / "index.html", *note_pages]
     referenced_images: set[Path] = set()
@@ -158,6 +182,11 @@ def validate(public: bool = False) -> int:
     inline_figures = 0
     for html_path in note_pages:
         text = read_text(html_path)
+        if re.search(r"</p>\s*<p>[.!?…。]", text):
+            errors.append(f"{html_path.relative_to(ROOT)} has punctuation split into a new paragraph")
+        for pattern in BROKEN_TEXT_PATTERNS:
+            if pattern in text:
+                errors.append(f"{html_path.relative_to(ROOT)} contains broken extracted text: {pattern}")
         for block in re.findall(r'<figure class="inline-figure">.*?</figure>', text, flags=re.S):
             inline_figures += 1
             img_match = re.search(r"<img\s+([^>]+)>", block)

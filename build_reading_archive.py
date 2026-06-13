@@ -520,10 +520,9 @@ def score_class(rating_number: float | None) -> str:
 def reset_generated_dirs() -> None:
     for path in [ROOT / "notes", ROOT / "assets" / "images"]:
         if path.exists():
-            try:
-                shutil.rmtree(path)
-            except OSError:
-                subprocess.run(["rm", "-rf", str(path)], check=True)
+            subprocess.run(["/bin/rm", "-rf", str(path)], check=True)
+        if path.exists():
+            shutil.rmtree(path)
     (ROOT / "notes").mkdir(parents=True, exist_ok=True)
     (ROOT / "assets" / "images").mkdir(parents=True, exist_ok=True)
 
@@ -589,6 +588,118 @@ def page_layout_items(reader: PdfReader, page_number: int, image_lookup: dict[tu
     return items
 
 
+def is_url_or_domain_line(text: str) -> bool:
+    return bool(re.match(r"^(https?://|[A-Za-z0-9.-]+\.[A-Za-z]{2,})(/\S*)?$", text.strip()))
+
+
+def is_outline_line(text: str) -> bool:
+    text = text.strip()
+    return bool(
+        re.match(r"^(목차|추천사|서문|프롤로그|에필로그|결론)$", text)
+        or re.match(r"^제\s*\d+\s*장\b", text)
+        or re.match(r"^\d+(?:\.\d+)+\s+\S+", text)
+        or re.match(r"^\d+\s*[.)]\s+\S+", text)
+    )
+
+
+def is_sentence_end(text: str) -> bool:
+    text = text.strip().rstrip("\"'”’)]}〉》」』")
+    if not text:
+        return False
+    if is_url_or_domain_line(text) or is_outline_line(text):
+        return True
+    return bool(re.search(r"([.!?…。]|요|죠|군요|네요|니다|습니다|했습니다|됩니다|입니다|있습니다|없습니다|싶습니다|같습니다|봅니다|합니다|였습니다|였죠|겠죠|ㅠ+|ㅜ+|ㅋ+|ㅎ+)$", text))
+
+
+def hangul_tail_token_length(text: str) -> int:
+    match = re.search(r"([가-힣]+)$", text)
+    return len(match.group(1)) if match else 0
+
+
+def needs_join_without_space(left: str, right: str) -> bool:
+    left = left.rstrip()
+    right = right.lstrip()
+    if not left or not right:
+        return True
+    if re.match(r"^[,.;:!?…)\]}〉》」』]", right):
+        return True
+    if re.search(r"[(\[{'\"“‘〈《「『]$", left):
+        return True
+    if re.search(r"[가-힣]$", left) and re.match(r"^[가-힣]", right):
+        if hangul_tail_token_length(left) <= 1:
+            return True
+        if re.match(r"^(에서|에게|으로|부터|까지|처럼|보다|이나|라도|마저|조차|들이|면서|지만|다가|는데|라서|라고|하고|해야|하는|했던|했다|한|할)", right):
+            return True
+        if re.match(r"^(은|는|이|가|을|를|의|에|께|와|과|도|만|로|랑|나|들|면|며|고|게)(?:\s|$)", right):
+            return True
+    return False
+
+
+def join_wrapped_text(left: str, right: str) -> str:
+    left = left.rstrip()
+    right = right.lstrip()
+    if needs_join_without_space(left, right):
+        return left + right
+    return left + " " + right
+
+
+def polish_extracted_text(text: str) -> str:
+    replacements = {
+        "읽으니참": "읽으니 참",
+        "코어개발자": "코어 개발자",
+        "돈'비트코인": "돈' 비트코인",
+        "돈&#x27;비트코인": "돈&#x27; 비트코인",
+        "라이 벌": "라이벌",
+        "받아들여야 함비트코인": "받아들여야 함. 비트코인",
+        "바꾸게 됨사람": "바꾸게 됨. 사람",
+        "보게 됨몰입": "보게 됨. 몰입",
+        "도움이 됨스위치": "도움이 됨. 스위치",
+        "힘훌륭한": "힘: 훌륭한",
+        "거래 소": "거래소",
+        "두입장": "두 입장",
+        "영희로과": "영희와",
+    }
+    for source, target in replacements.items():
+        text = text.replace(source, target)
+    text = re.sub(r"([가-힣])\s+(니다|습니다|입니다|합니다|했습니다|됩니다|였습니다|었습니다|았습니다|겠죠|군요|네요)", r"\1\2", text)
+    return text
+
+
+def merge_wrapped_paragraphs(content: list[dict[str, object]]) -> list[dict[str, object]]:
+    merged: list[dict[str, object]] = []
+    buffer = ""
+
+    def flush() -> None:
+        nonlocal buffer
+        if buffer:
+            merged.append({"type": "paragraph", "text": polish_extracted_text(buffer)})
+            buffer = ""
+
+    for item in content:
+        if item["type"] == "image":
+            flush()
+            merged.append(item)
+            continue
+
+        line = compact_spaces(str(item["text"]))
+        if not line:
+            continue
+        if re.match(r"^[.!?…。]", line) and not buffer and merged and merged[-1].get("type") == "paragraph":
+            merged[-1]["text"] = polish_extracted_text(str(merged[-1]["text"]).rstrip() + line)
+            continue
+        if is_url_or_domain_line(line) or is_outline_line(line):
+            flush()
+            merged.append({"type": "paragraph", "text": line})
+            continue
+
+        buffer = join_wrapped_text(buffer, line) if buffer else line
+        if is_sentence_end(line):
+            flush()
+
+    flush()
+    return merged
+
+
 def build_content_items(reader: PdfReader, entries: list[dict[str, object]]) -> None:
     image_lookup: dict[tuple[int, str], dict[str, object]] = {}
     for entry in entries:
@@ -628,7 +739,7 @@ def build_content_items(reader: PdfReader, entries: list[dict[str, object]]) -> 
                 if cleaned_line and cleaned_line != one_liner and not is_title_echo:
                     content.append({"type": "paragraph", "text": cleaned_line})
 
-        entry["content"] = content
+        entry["content"] = merge_wrapped_paragraphs(content)
 
 
 def render_thumb(entry: dict[str, object]) -> str:
@@ -850,6 +961,7 @@ def write_readme(entries: list[dict[str, object]], image_count: int, source_name
 - `assets/images/`: PDF에서 추출한 책별 이미지
 - `data/reading_notes.json`: 추출한 책 제목, 점수, 한줄평, 본문, 이미지 경로 데이터
 - `build_reading_archive.py`: 원본 PDF에서 웹사이트를 다시 만드는 스크립트
+- `validate_reading_archive.py`: 이미지 경로, 크기, 공개 URL을 검사하는 검증 스크립트
 
 현재 정리된 글 수: {len(entries)}
 추출한 이미지 수: {image_count}
@@ -861,6 +973,12 @@ def write_readme(entries: list[dict[str, object]], image_count: int, source_name
 ```
 
 GitHub Pages는 `main` 브랜치의 루트(`/`)를 배포 대상으로 사용합니다.
+
+## 검증하기
+
+```bash
+/Users/min/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 validate_reading_archive.py --public
+```
 """
 
 
