@@ -4,6 +4,7 @@ import argparse
 import json
 import re
 import sys
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from html.parser import HTMLParser
 from pathlib import Path
@@ -58,21 +59,27 @@ def image_size(path: Path) -> tuple[int, int]:
 
 
 def public_status(url: str) -> tuple[str, int | None, str]:
-    request = Request(url, method="HEAD", headers={"Cache-Control": "no-cache", "User-Agent": "reading-archive-validator"})
-    try:
-        with urlopen(request, timeout=20) as response:
-            return url, response.status, ""
-    except HTTPError as error:
-        if error.code == 405:
-            get_request = Request(url, headers={"Cache-Control": "no-cache", "User-Agent": "reading-archive-validator"})
-            try:
-                with urlopen(get_request, timeout=20) as response:
-                    return url, response.status, ""
-            except Exception as get_error:  # noqa: BLE001
-                return url, None, str(get_error)
-        return url, error.code, str(error)
-    except (URLError, TimeoutError) as error:
-        return url, None, str(error)
+    last_error = ""
+    for attempt in range(3):
+        request = Request(url, method="HEAD", headers={"Cache-Control": "no-cache", "User-Agent": "reading-archive-validator"})
+        try:
+            with urlopen(request, timeout=25) as response:
+                return url, response.status, ""
+        except HTTPError as error:
+            if error.code == 405:
+                get_request = Request(url, headers={"Cache-Control": "no-cache", "User-Agent": "reading-archive-validator"})
+                try:
+                    with urlopen(get_request, timeout=25) as response:
+                        return url, response.status, ""
+                except Exception as get_error:  # noqa: BLE001
+                    last_error = str(get_error)
+            else:
+                return url, error.code, str(error)
+        except (URLError, TimeoutError) as error:
+            last_error = str(error)
+        if attempt < 2:
+            time.sleep(0.5 * (attempt + 1))
+    return url, None, last_error
 
 
 def public_url(src: str) -> str:
