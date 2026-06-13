@@ -5,6 +5,7 @@ import html
 import json
 import re
 import shutil
+import subprocess
 import sys
 import unicodedata
 from datetime import datetime
@@ -253,27 +254,21 @@ main { padding: 34px 0 80px; }
   color: var(--muted);
   font-size: 13px;
 }
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-  margin: 28px 0 30px;
-}
-.gallery figure {
-  margin: 0;
+.inline-figure {
+  margin: 26px 0;
   border: 1px solid var(--line);
   border-radius: 8px;
   overflow: hidden;
   background: #fff;
   box-shadow: var(--shadow);
 }
-.gallery img {
+.inline-figure img {
   width: 100%;
   max-height: 720px;
   object-fit: contain;
   background: #f3f0ea;
 }
-.gallery figcaption {
+.inline-figure figcaption {
   padding: 8px 10px;
   color: var(--muted);
   font-size: 13px;
@@ -315,7 +310,6 @@ main { padding: 34px 0 80px; }
   .row-score { grid-column: 1; grid-row: 2; min-width: 46px; font-size: 12px; }
   .row-title, .row-line, .row-date { grid-column: 2; }
   .row-line { font-size: 15px; }
-  .gallery { grid-template-columns: 1fr; }
 }
 """
 
@@ -341,10 +335,7 @@ def dedupe_export_echo(value: str) -> str:
 
 
 def slugify(title: str, index: int) -> str:
-    normalized = unicodedata.normalize("NFC", title).lower()
-    slug = re.sub(r"[^0-9a-z가-힣]+", "-", normalized)
-    slug = re.sub(r"-{2,}", "-", slug).strip("-")
-    return f"note-{index:02d}-{slug[:44] or 'book'}"
+    return f"note-{index:02d}"
 
 
 def safe_filename(value: str) -> str:
@@ -412,6 +403,46 @@ def parse_one_liner(block: str) -> tuple[str, bool]:
     return "한줄평 없음", True
 
 
+def clean_body_line(line: str, skip_scale: bool, seen_recent: list[str]) -> tuple[str | None, bool]:
+    line = dedupe_export_echo(line)
+    if not line:
+        return None, skip_scale
+    if re.match(r"^\d{4}/\d{2}/\d{2}\s+\d{2}:\d{2}", line):
+        return None, skip_scale
+    if re.match(r"^https?://blog\.naver\.com/ajotsee/\d+", line):
+        return None, skip_scale
+    if line in {"독서", "독서독서"}:
+        return None, skip_scale
+    if re.search(r"소장점수\s*[0-9]+(?:\.[0-9]+)?/10", line):
+        return None, skip_scale
+    if "한줄평" in line:
+        return None, skip_scale
+    if "소장가치 스케일러" in line:
+        return None, True
+    if re.match(r"^(1점|3~4점|5~6점|7~8점|9~10\s*점?)", line):
+        return None, skip_scale
+    if line in {"·", "아조씨의 개소리"} or re.match(r"^\d{1,3}$", line):
+        return None, skip_scale
+    if skip_scale and (
+        re.match(r"^(1점|3~4점|5~6점|7~8점|9~10)", line)
+        or "쓰레기" in line
+        or "빌려" in line
+        or "후손에게" in line
+    ):
+        return None, True
+    skip_scale = False
+    if re.match(r"^\d+\s*·\s*아조씨의 개소리$", line):
+        return None, skip_scale
+    if line in {"blog.naver.com", "m.blog.naver.com", "x.com"}:
+        return None, skip_scale
+    if seen_recent and line == seen_recent[-1]:
+        return None, skip_scale
+    seen_recent.append(line)
+    if len(seen_recent) > 6:
+        seen_recent.pop(0)
+    return line, skip_scale
+
+
 def cleaned_body_lines(block: str) -> list[str]:
     lines = [dedupe_export_echo(line) for line in block.splitlines()]
     cleaned: list[str] = []
@@ -419,37 +450,9 @@ def cleaned_body_lines(block: str) -> list[str]:
     seen_recent: list[str] = []
 
     for line in lines:
-        if not line:
-            continue
-        if re.match(r"^\d{4}/\d{2}/\d{2}\s+\d{2}:\d{2}\s+https?://", line):
-            continue
-        if line in {"독서", "독서독서"}:
-            continue
-        if re.search(r"소장점수\s*[0-9]+(?:\.[0-9]+)?/10", line):
-            continue
-        if "한줄평" in line:
-            continue
-        if "소장가치 스케일러" in line:
-            skip_scale = True
-            continue
-        if skip_scale and (
-            re.match(r"^(1점|3~4점|5~6점|7~8점|9~10)", line)
-            or "쓰레기" in line
-            or "빌려" in line
-            or "후손에게" in line
-        ):
-            continue
-        skip_scale = False
-        if re.match(r"^\d+\s*·\s*아조씨의 개소리$", line):
-            continue
-        if line in {"blog.naver.com", "m.blog.naver.com", "x.com"}:
-            continue
-        if seen_recent and line == seen_recent[-1]:
-            continue
-        seen_recent.append(line)
-        if len(seen_recent) > 6:
-            seen_recent.pop(0)
-        cleaned.append(line)
+        cleaned_line, skip_scale = clean_body_line(line, skip_scale, seen_recent)
+        if cleaned_line:
+            cleaned.append(cleaned_line)
     return cleaned
 
 
@@ -515,7 +518,10 @@ def score_class(rating_number: float | None) -> str:
 def reset_generated_dirs() -> None:
     for path in [ROOT / "notes", ROOT / "assets" / "images"]:
         if path.exists():
-            shutil.rmtree(path)
+            try:
+                shutil.rmtree(path)
+            except OSError:
+                subprocess.run(["rm", "-rf", str(path)], check=True)
     (ROOT / "notes").mkdir(parents=True, exist_ok=True)
     (ROOT / "assets" / "images").mkdir(parents=True, exist_ok=True)
 
@@ -542,12 +548,74 @@ def extract_images(reader: PdfReader, entries: list[dict[str, object]]) -> int:
                         "src": root_src,
                         "filename": filename,
                         "page": page_number,
+                        "xobject": f"/{Path(original_name).stem}",
                     }
                 )
                 image_index += 1
                 total += 1
         entry["images"] = images
     return total
+
+
+def page_layout_items(reader: PdfReader, page_number: int, image_lookup: dict[tuple[int, str], dict[str, object]]) -> list[dict[str, object]]:
+    page = reader.pages[page_number - 1]
+    items: list[dict[str, object]] = []
+
+    def before_operand(operator, operands, cm, tm):
+        if operator != b"Do" or not operands:
+            return
+        key = str(operands[0])
+        image = image_lookup.get((page_number, key))
+        if image:
+            items.append({"type": "image", "image": image})
+
+    def visit_text(text, cm, tm, font_dict, font_size):
+        line = dedupe_export_echo(text)
+        if line:
+            items.append({"type": "text", "text": line})
+
+    page.extract_text(visitor_operand_before=before_operand, visitor_text=visit_text)
+    return items
+
+
+def build_content_items(reader: PdfReader, entries: list[dict[str, object]]) -> None:
+    image_lookup: dict[tuple[int, str], dict[str, object]] = {}
+    for entry in entries:
+        for image in entry.get("images") or []:
+            image_lookup[(int(image["page"]), str(image["xobject"]))] = image
+
+    for entry in entries:
+        content: list[dict[str, object]] = []
+        skip_scale = False
+        seen_recent: list[str] = []
+        one_liner = str(entry["oneLiner"])
+        title = str(entry["title"]).rstrip(" -")
+
+        for page_number in range(int(entry["startPage"]), int(entry["endPage"]) + 1):
+            for item in page_layout_items(reader, page_number, image_lookup):
+                if item["type"] == "image":
+                    image = item["image"]
+                    if any(image is known for known in (entry.get("images") or [])):
+                        content.append(
+                            {
+                                "type": "image",
+                                "src": image["src"],
+                                "page": image["page"],
+                                "filename": image["filename"],
+                            }
+                        )
+                    continue
+
+                cleaned_line, skip_scale = clean_body_line(str(item["text"]), skip_scale, seen_recent)
+                is_title_echo = bool(cleaned_line) and (
+                    cleaned_line == title
+                    or title.startswith(cleaned_line.rstrip(" -"))
+                    and len(cleaned_line.rstrip(" -")) >= 12
+                )
+                if cleaned_line and cleaned_line != one_liner and not is_title_echo:
+                    content.append({"type": "paragraph", "text": cleaned_line})
+
+        entry["content"] = content
 
 
 def render_thumb(entry: dict[str, object]) -> str:
@@ -689,23 +757,24 @@ def render_index(entries: list[dict[str, object]], source_name: str) -> str:
 """
 
 
-def render_gallery(entry: dict[str, object]) -> str:
-    images = entry.get("images") or []
-    if not images:
-        return ""
-
-    figures = []
-    for index, image in enumerate(images, start=1):
-        src = "../../" + str(image["src"])
-        figures.append(
-            f"""
-            <figure>
-              <img src="{html.escape(src)}" alt="{html.escape(str(entry["title"]))} 이미지 {index}" loading="lazy">
-              <figcaption>PDF {image["page"]}쪽 이미지 {index}</figcaption>
-            </figure>
-            """
-        )
-    return f'<section class="gallery" aria-label="PDF에서 추출한 이미지">{"".join(figures)}</section>'
+def render_content(entry: dict[str, object]) -> str:
+    parts = []
+    image_index = 1
+    for item in entry.get("content") or []:
+        if item["type"] == "image":
+            src = "../../" + str(item["src"])
+            parts.append(
+                f"""
+                <figure class="inline-figure">
+                  <img src="{html.escape(src)}" alt="{html.escape(str(entry["title"]))} 이미지 {image_index}" loading="lazy">
+                  <figcaption>PDF {item["page"]}쪽 이미지 {image_index}</figcaption>
+                </figure>
+                """
+            )
+            image_index += 1
+        else:
+            parts.append(f"<p>{html.escape(str(item['text']))}</p>")
+    return "\n".join(parts)
 
 
 def render_note_page(entry: dict[str, object], source_name: str) -> str:
@@ -714,8 +783,7 @@ def render_note_page(entry: dict[str, object], source_name: str) -> str:
         if entry["oneLinerGenerated"]
         else ""
     )
-    body = "\n".join(f"<p>{html.escape(str(line))}</p>" for line in entry["body"])
-    gallery = render_gallery(entry)
+    body = render_content(entry)
 
     return f"""<!doctype html>
 <html lang="ko">
@@ -738,7 +806,6 @@ def render_note_page(entry: dict[str, object], source_name: str) -> str:
       <div class="note-summary">{html.escape(str(entry["oneLiner"]))}</div>
       {generated_note}
     </header>
-    {gallery}
     <main class="body-text">
       {body}
     </main>
@@ -787,6 +854,7 @@ def main() -> None:
     entries = parse_posts(text, page_offsets)
     reset_generated_dirs()
     image_count = extract_images(reader, entries)
+    build_content_items(reader, entries)
 
     data_dir = ROOT / "data"
     data_dir.mkdir(exist_ok=True)

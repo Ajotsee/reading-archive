@@ -232,27 +232,21 @@ main { padding: 34px 0 80px; }
   color: var(--muted);
   font-size: 13px;
 }
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-  margin: 28px 0 30px;
-}
-.gallery figure {
-  margin: 0;
+.inline-figure {
+  margin: 26px 0;
   border: 1px solid var(--line);
   border-radius: 8px;
   overflow: hidden;
   background: #fff;
   box-shadow: var(--shadow);
 }
-.gallery img {
+.inline-figure img {
   width: 100%;
   max-height: 720px;
   object-fit: contain;
   background: #f3f0ea;
 }
-.gallery figcaption {
+.inline-figure figcaption {
   padding: 8px 10px;
   color: var(--muted);
   font-size: 13px;
@@ -294,5 +288,4 @@ main { padding: 34px 0 80px; }
   .row-score { grid-column: 1; grid-row: 2; min-width: 46px; font-size: 12px; }
   .row-title, .row-line, .row-date { grid-column: 2; }
   .row-line { font-size: 15px; }
-  .gallery { grid-template-columns: 1fr; }
 }
