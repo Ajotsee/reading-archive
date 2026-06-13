@@ -388,6 +388,7 @@ def parse_title_and_rating(block: str, lines: list[str]) -> tuple[str, str]:
 def parse_one_liner(block: str) -> tuple[str, bool]:
     marker = re.search(r"한줄평\s*:.*?(?:\n|$)", block, re.S)
     if marker:
+        candidate = ""
         for raw_line in block[marker.end() :].splitlines():
             line = dedupe_export_echo(raw_line)
             if not line:
@@ -396,7 +397,15 @@ def parse_one_liner(block: str) -> tuple[str, bool]:
                 continue
             if re.match(r"^\d+점|^\d+~\d+점|^9~10", line):
                 continue
-            return line, False
+            if not candidate:
+                candidate = line
+                continue
+            if starts_with_korean_continuation(line) or (not is_sentence_end(candidate) and len(line) <= 8):
+                candidate = polish_extracted_text(join_wrapped_text(candidate, line))
+                continue
+            break
+        if candidate:
+            return candidate, False
 
     for raw_line in cleaned_body_lines(block):
         line = dedupe_export_echo(raw_line)
@@ -628,11 +637,16 @@ def needs_join_without_space(left: str, right: str) -> bool:
     if re.search(r"[가-힣]$", left) and re.match(r"^[가-힣]", right):
         if hangul_tail_token_length(left) <= 1:
             return True
-        if re.match(r"^(에서|에게|으로|부터|까지|처럼|보다|이나|라도|마저|조차|들이|면서|지만|다가|는데|라서|라고|하고|해야|하는|했던|했다|한|할)", right):
-            return True
-        if re.match(r"^(은|는|이|가|을|를|의|에|께|와|과|도|만|로|랑|나|들|면|며|고|게)(?:\s|$)", right):
+        if starts_with_korean_continuation(right):
             return True
     return False
+
+
+def starts_with_korean_continuation(text: str) -> bool:
+    return bool(
+        re.match(r"^(에서|에게|으로|부터|까지|처럼|보다|이나|라도|마저|조차|들이|면서|지만|다가|는데|라서|라고|하고|해야|하는|했던|했다|한|할)", text)
+        or re.match(r"^(은|는|이|가|을|를|의|에|께|와|과|도|만|로|랑|나|들|면|며|고|게)(?:\s|$)", text)
+    )
 
 
 def join_wrapped_text(left: str, right: str) -> str:
@@ -711,6 +725,7 @@ def build_content_items(reader: PdfReader, entries: list[dict[str, object]]) -> 
         skip_scale = False
         seen_recent: list[str] = []
         one_liner = str(entry["oneLiner"])
+        one_liner_fragments_skipped = 0
         title = str(entry["title"]).rstrip(" -")
 
         for page_number in range(int(entry["startPage"]), int(entry["endPage"]) + 1):
@@ -736,6 +751,13 @@ def build_content_items(reader: PdfReader, entries: list[dict[str, object]]) -> 
                     or title.startswith(cleaned_line.rstrip(" -"))
                     and len(cleaned_line.rstrip(" -")) >= 12
                 )
+                is_one_liner_fragment = bool(cleaned_line) and one_liner_fragments_skipped < 2 and (
+                    (len(cleaned_line) <= 24 and one_liner.endswith(cleaned_line))
+                    or (len(cleaned_line) >= 20 and one_liner.startswith(cleaned_line))
+                )
+                if is_one_liner_fragment:
+                    one_liner_fragments_skipped += 1
+                    continue
                 if cleaned_line and cleaned_line != one_liner and not is_title_echo:
                     content.append({"type": "paragraph", "text": cleaned_line})
 

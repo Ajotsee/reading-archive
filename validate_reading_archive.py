@@ -33,6 +33,9 @@ BROKEN_TEXT_PATTERNS = [
     "두입장",
     "영희로과",
     "부여합 니다",
+    "하는 책저는",
+    "<p>는 책</p>",
+    "반드시 읽어야 하</div>",
     "이었 습니다",
     "했 습니다",
     "였 습니다",
@@ -113,9 +116,9 @@ def validate(public: bool = False) -> int:
 
     data = json.loads((ROOT / "data" / "reading_notes.json").read_text(encoding="utf-8"))
     slugs = [str(entry["slug"]) for entry in data]
-    note_pages = sorted((ROOT / "notes").glob("note-*/index.html"))
+    note_pages = sorted(path for path in (ROOT / "notes").glob("note-*/index.html") if re.fullmatch(r"note-\d{2}", path.parent.name))
     note_slugs = [path.parent.name for path in note_pages]
-    image_dirs = sorted(path.name for path in (ROOT / "assets" / "images").glob("note-*") if path.is_dir())
+    image_dirs = sorted(path.name for path in (ROOT / "assets" / "images").glob("note-*") if path.is_dir() and re.fullmatch(r"note-\d{2}", path.name))
 
     if len(data) != 82:
         errors.append(f"expected 82 entries, found {len(data)}")
