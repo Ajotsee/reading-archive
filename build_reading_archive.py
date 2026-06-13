@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import bisect
 import html
+import io
 import json
 import re
 import shutil
@@ -11,6 +12,7 @@ import unicodedata
 from datetime import datetime
 from pathlib import Path
 
+from PIL import Image
 from pypdf import PdfReader
 
 
@@ -542,6 +544,13 @@ def extract_images(reader: PdfReader, entries: list[dict[str, object]]) -> int:
                 filename = f"p{page_number:03d}-{image_index:02d}{suffix}"
                 target = image_dir / filename
                 target.write_bytes(image.data)
+                width = None
+                height = None
+                try:
+                    with Image.open(io.BytesIO(image.data)) as opened_image:
+                        width, height = opened_image.size
+                except Exception:
+                    pass
                 root_src = f"assets/images/{slug}/{filename}"
                 images.append(
                     {
@@ -549,6 +558,8 @@ def extract_images(reader: PdfReader, entries: list[dict[str, object]]) -> int:
                         "filename": filename,
                         "page": page_number,
                         "xobject": f"/{Path(original_name).stem}",
+                        "width": width,
+                        "height": height,
                     }
                 )
                 image_index += 1
@@ -602,6 +613,8 @@ def build_content_items(reader: PdfReader, entries: list[dict[str, object]]) -> 
                                 "src": image["src"],
                                 "page": image["page"],
                                 "filename": image["filename"],
+                                "width": image.get("width"),
+                                "height": image.get("height"),
                             }
                         )
                     continue
@@ -763,10 +776,12 @@ def render_content(entry: dict[str, object]) -> str:
     for item in entry.get("content") or []:
         if item["type"] == "image":
             src = "../../" + str(item["src"])
+            width = f' width="{int(item["width"])}"' if item.get("width") else ""
+            height = f' height="{int(item["height"])}"' if item.get("height") else ""
             parts.append(
                 f"""
                 <figure class="inline-figure">
-                  <img src="{html.escape(src)}" alt="{html.escape(str(entry["title"]))} 이미지 {image_index}" loading="lazy">
+                  <img src="{html.escape(src)}" alt="{html.escape(str(entry["title"]))} 이미지 {image_index}"{width}{height} decoding="async">
                   <figcaption>PDF {item["page"]}쪽 이미지 {image_index}</figcaption>
                 </figure>
                 """
